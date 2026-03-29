@@ -1,32 +1,88 @@
-<img width="1671" height="777" alt="image" src="https://github.com/user-attachments/assets/380d7e71-d924-4600-aec6-fe2a21f476e0" /><<<<<<< HEAD
-## Portfolio-Website
-Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
+<img width="1671" height="777" alt="image" src="https://github.com/user-attachments/assets/380d7e71-d924-4600-aec6-fe2a21f476e0" />
+# Mohit Yadav - Developer Portfolio
 
-<a href="https://jigarsable.netlify.app/" target="_blank">**Visit Now** 🚀</a>
+Welcome to my personal developer portfolio repository.
 
+This portfolio showcases my projects, open-source contributions, technical skills, and my learning journey in software development.
 
-## 📌 Tech Stack
-[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/jigar-sable/Portfolio-Website/search?l=html)&nbsp;
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/jigar-sable/Portfolio-Website/search?l=css)&nbsp;
-[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/jigar-sable/Portfolio-Website/search?l=javascript)
-<img alt="jQuery" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"/>
+---
 
-### Extras : 
-Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
+## 🚀 Tech Skills
 
-## 📌 Sneak Peek of Main Page 🙈 :
-![mockup720](<img width="1627" height="798" alt="image" src="https://github.com/user-attachments/assets/6968e3ba-21bb-4464-bc58-5c41c12ed92b" />
-)
-![ss](https://user-images.githubusercontent.com/64949957/159113640-d92665a8-f614-42b3-8456-66b97fc2e651.png)
+* HTML5
+* CSS3
+* JavaScript
+* Python
+* Git
+* GitHub
+* Open Source Contribution
+* Problem Solving
 
+---
 
-<h2>📬 Contact</h2>
+## 🛠 Tech Stack
 
-Feel free to reach me through the below handles if you'd like to contact me.
+![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?\&style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-%231572B6.svg?\&style=for-the-badge\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?\&style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)
+![Python](https://img.shields.io/badge/python-%233776AB.svg?\&style=for-the-badge\&logo=python\&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?\&style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?\&style=for-the-badge\&logo=github\&logoColor=white)
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sablee)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jigarsable.dev)
-=======
-# mohit-portfolio
-My developer portfolio showcasing projects, open source contributions, technical skills, and learning journey in software development.
->>>>>>> f2d9daf21c5d13c312c1f8be68330eaaf3d32778
+---
+
+## 📂 Project Structure
+
+assets/
+experience/
+projects/
+index.html
+404.html
+skills.json
+README.md
+
+---
+
+## 🌱 About Me
+
+I am passionate about open source and software development.
+I actively contribute to projects, participate in hackathons, and continuously improve my programming and development skills.
+
+My interests include:
+
+* Open Source Development
+* Web Development
+* Software Engineering
+* Building useful tools and projects
+
+---
+
+## ✨ Features
+
+* Responsive Portfolio Website
+* Projects Showcase
+* Skills Section
+* Experience Section
+* Interactive UI with JavaScript
+
+---
+
+## 🌐 Live Portfolio
+
+After enabling GitHub Pages, the portfolio will be available at:
+
+https://mohityadav8.github.io/mohit-portfolio/
+
+---
+
+## 📫 Connect With Me
+
+GitHub
+https://github.com/mohityadav8
+
+LinkedIn
+(Add your LinkedIn profile link here)
+
+---
+
+⭐ If you like this project, feel free to star the repository!
