@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Portfolio-Website
 Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
@@ -24,3 +25,7 @@ Feel free to reach me through the below handles if you'd like to contact me.
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sablee)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jigarsable.dev)
+=======
+# mohit-portfolio
+My developer portfolio showcasing projects, open source contributions, technical skills, and learning journey in software development.
+>>>>>>> f2d9daf21c5d13c312c1f8be68330eaaf3d32778
