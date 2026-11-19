@@ -32,16 +32,23 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
     });
 
+    // Contact form: opens the visitor's email app with the message pre-filled
+    // (GitHub Pages is static, so there is no server to post to).
     $("#contact-form").submit(function (event) {
         event.preventDefault();
-        alert("Thanks for reaching out! I'll get back to you soon.");
-        document.getElementById("contact-form").reset();
+        var f = this;
+        var subject = "Portfolio contact from " + f.name.value;
+        var body = f.message.value + "\n\n— " + f.name.value + "\n" + f.email.value +
+                   (f.phone.value ? "\n" + f.phone.value : "");
+        window.location.href = "mailto:ymohit799057@gmail.com?subject=" +
+            encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        f.reset();
     });
 });
 
 document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === "visible") {
-        document.title = "Mohit Yadav | AI Safety & ML Alignment";
+        document.title = "Mohit Yadav | GPU Systems & ML Infrastructure";
         $("#favicon").attr("href", "assets/images/favicon.png");
     } else {
         document.title = "Come Back! 👋";
@@ -49,14 +56,14 @@ document.addEventListener('visibilitychange', function () {
     }
 });
 
-// typed.js — updated for AI safety / alignment focus
+// typed.js
 var typed = new Typed(".typing-text", {
     strings: [
-        "AI Safety",
-        "ML Alignment",
-        "mechanistic interpretability",
-        "open source engineering",
-        "full stack development",
+        "GPU systems",
+        "Kubernetes ML infrastructure",
+        "CUDA & performance",
+        "LLM alignment research",
+        "open source at NVIDIA & Microsoft",
     ],
     loop: true,
     typeSpeed: 55,
@@ -77,7 +84,7 @@ document.onkeydown = function (e) {
 };
 
 /* ===== SCROLL REVEAL ===== */
-const srtop = ScrollReveal({ origin: 'top', distance: '60px', duration: 900, reset: true });
+const srtop = ScrollReveal({ origin: 'top', distance: '60px', duration: 900, reset: false });
 
 srtop.reveal('.home .content h2',       { delay: 100 });
 srtop.reveal('.home .content p',        { delay: 200 });
@@ -93,6 +100,8 @@ srtop.reveal('.about .content .resumebtn', { delay: 400 });
 
 srtop.reveal('.skill-category',         { interval: 150, delay: 200 });
 
+srtop.reveal('.oss-card',               { interval: 120, delay: 150 });
+srtop.reveal('.cert-card',              { interval: 100, delay: 150 });
 srtop.reveal('.pub-card',               { interval: 200, delay: 200 });
 
 srtop.reveal('.education .box',         { interval: 200 });

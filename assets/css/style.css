@@ -1279,3 +1279,172 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
   color: #fff;
   transform: translateY(-2px);
 }
+
+/* =========================================================
+   OPEN SOURCE CONTRIBUTIONS
+   ========================================================= */
+.oss { background: #f0f5ff; padding: 5rem 9%; min-height: auto; }
+.oss .heading { margin-bottom: 1rem; }
+.oss-intro {
+  text-align: center; font-size: 1.5rem; color: #64748b;
+  margin-bottom: 3rem; text-transform: none;
+}
+.oss-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44rem, 1fr));
+  gap: 2.2rem;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.oss-card {
+  background: #fff;
+  border: 1px solid rgba(0,102,255,0.14);
+  border-radius: 1.4rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  transition: 0.3s;
+}
+.oss-card:hover {
+  border-color: var(--accent2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,102,255,0.12);
+}
+.oss-featured {
+  grid-column: 1 / -1;
+  border-color: rgba(118,185,0,0.45);
+  background: linear-gradient(135deg, #ffffff 0%, #f6fbec 100%);
+}
+.oss-featured:hover { border-color: #76b900; box-shadow: 0 12px 40px rgba(118,185,0,0.15); }
+
+.oss-head { display: flex; align-items: center; gap: 1.4rem; }
+.oss-logo {
+  width: 5rem; height: 5rem; flex-shrink: 0;
+  border-radius: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem; color: #fff;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+}
+.oss-nvidia { background: linear-gradient(135deg, #4d7c00, #76b900); }
+.oss-ms     { background: linear-gradient(135deg, #0067b8, #00a4ef); }
+.oss-cncf   { background: linear-gradient(135deg, #0b4f9c, #3f8fdc); }
+.oss-tofu   { background: linear-gradient(135deg, #b8860b, #e7c200); }
+.oss-py     { background: linear-gradient(135deg, #306998, #ffd43b); }
+.oss-ml     { background: linear-gradient(135deg, #6d28d9, #a78bfa); }
+.oss-owasp  { background: linear-gradient(135deg, #111827, #475569); }
+
+.oss-title { flex: 1; min-width: 0; }
+.oss-title h3 { font-size: 1.9rem; font-weight: 700; text-transform: none; line-height: 1.25; }
+.oss-title h3 a { color: #0f172a; }
+.oss-title h3 a:hover { color: var(--accent2); }
+.oss-title p { font-size: 1.3rem; color: #64748b; text-transform: none; margin-top: 0.2rem; }
+.oss-date {
+  font-family: "Fira Code", monospace;
+  font-size: 1.15rem; font-weight: 600;
+  color: var(--accent2);
+  background: rgba(0,102,255,0.08);
+  border: 1px solid rgba(0,102,255,0.15);
+  padding: 0.35rem 0.9rem; border-radius: 2rem;
+  white-space: nowrap; align-self: flex-start;
+}
+.oss-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.oss-chips span {
+  font-size: 1.2rem; font-weight: 600;
+  padding: 0.35rem 1rem; border-radius: 2rem;
+  background: rgba(16,185,129,0.1); color: #047857;
+  border: 1px solid rgba(16,185,129,0.25);
+  text-transform: none;
+}
+.oss-chips span i { margin-right: 0.3rem; }
+.oss-card ul { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; flex: 1; }
+.oss-card ul li {
+  position: relative; padding-left: 1.8rem;
+  font-size: 1.4rem; line-height: 1.65; color: #475569; text-transform: none;
+}
+.oss-card ul li::before {
+  content: ""; position: absolute; left: 0; top: 0.85rem;
+  width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--accent2);
+}
+.oss-featured ul li::before { background: #76b900; }
+.oss-card ul li a { color: var(--accent2); font-weight: 600; font-family: "Fira Code", monospace; font-size: 1.25rem; }
+.oss-card ul li a:hover { text-decoration: underline; }
+.oss-card code {
+  font-family: "Fira Code", monospace; font-size: 1.2rem;
+  background: #eef4ff; color: #1e3a8a;
+  padding: 0.1rem 0.5rem; border-radius: 0.4rem;
+}
+.oss-releases { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.oss-rel-label { font-size: 1.2rem; font-weight: 600; color: #64748b; margin-right: 0.3rem; }
+.oss-releases a {
+  font-family: "Fira Code", monospace; font-size: 1.15rem; font-weight: 600;
+  padding: 0.3rem 0.85rem; border-radius: 0.6rem;
+  background: #0a1628; color: var(--accent);
+}
+.oss-releases a:hover { background: var(--accent2); color: #fff; }
+.oss-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+.oss-all {
+  font-size: 1.35rem; font-weight: 700; color: var(--accent2);
+  display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start;
+}
+.oss-all:hover { gap: 0.9rem; color: #004dd9; }
+
+@media (max-width: 600px) {
+  .oss { padding: 4rem 4%; }
+  .oss-grid { grid-template-columns: 1fr; }
+  .oss-card { padding: 1.8rem; }
+  .oss-head { flex-wrap: wrap; }
+  .oss-date { order: 3; margin-left: 6.4rem; }
+}
+
+/* alternate section colours so neighbours don't blend */
+.experience { background: #ffffff; }
+
+/* =========================================================
+   CERTIFICATIONS (inside the dark awards section)
+   ========================================================= */
+.sub-heading {
+  text-align: center; color: #fff;
+  font-size: 2.4rem; font-weight: 700;
+  margin: 5rem 0 2.5rem; text-transform: none;
+}
+.sub-heading i { color: var(--accent); margin-right: 0.6rem; }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.6rem;
+  max-width: 1200px; margin: 0 auto;
+}
+.cert-card {
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: 1.6rem 1.8rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,212,255,0.12);
+  border-radius: 1.2rem;
+}
+.cert-card:hover { border-color: var(--accent); transform: translateY(-3px); background: rgba(0,212,255,0.06); }
+.cert-card > i { color: #64748b; font-size: 1.2rem; }
+.cert-card:hover > i { color: var(--accent); }
+.cert-logo {
+  width: 4.6rem; height: 4.6rem; flex-shrink: 0; border-radius: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  background: #1f70c1; color: #fff; font-size: 2.2rem;
+}
+.cert-logo span { font-family: "Fira Code", monospace; font-weight: 700; font-size: 1.4rem; letter-spacing: 0.1rem; }
+.cert-aws { background: #232f3e; color: #ff9900; }
+.cert-coursera { background: #0056d2; }
+.cert-info { flex: 1; min-width: 0; }
+.cert-info h4 { color: #e2e8f0; font-size: 1.5rem; font-weight: 700; text-transform: none; }
+.cert-info p { color: #94a3b8; font-size: 1.25rem; text-transform: none; margin-top: 0.2rem; }
+
+.social-icons a.leetcode:hover { background-color: #ffa116; color: #fff; }
+
+/* polish */
+.education .box-container .box .content p.edu-sub { margin: 0.3rem 0 0.3rem 1rem !important; line-height: 1.5; }
+.proj-body h3 { text-transform: none; }
+.experience .content .desc h3 { text-transform: none; }
+@media (max-width: 600px) {
+  .oss-head { flex-wrap: wrap; row-gap: 0.8rem; }
+  .oss-title { flex: 1 1 calc(100% - 6.4rem); }
+  .oss-date { order: 3; margin-left: 6.4rem; }
+}
