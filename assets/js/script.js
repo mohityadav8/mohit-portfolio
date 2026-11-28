@@ -1,115 +1,112 @@
-$(document).ready(function () {
+/* Mohit Yadav — portfolio behaviour. Vanilla JS, no jQuery. */
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
+(function () {
+  "use strict";
 
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
+  var topbar = document.getElementById("topbar");
+  var burger = document.getElementById("burger");
+  var nav = document.getElementById("nav");
+  var toTop = document.getElementById("totop");
+  var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
 
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
+  /* ---- mobile menu ---- */
+  burger.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", String(open));
+    burger.firstElementChild.className = open ? "fas fa-times" : "fas fa-bars";
+  });
 
-        $('section').each(function () {
-            let height = $(this).height();
-            let offset = $(this).offset().top - 200;
-            let top = $(window).scrollTop();
-            let id = $(this).attr('id');
-            if (top > offset && top < offset + height) {
-                $('.navbar ul li a').removeClass('active');
-                $('.navbar').find(`[href="#${id}"]`).addClass('active');
-            }
+  function closeNav() {
+    nav.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+    burger.firstElementChild.className = "fas fa-bars";
+  }
+  links.forEach(function (a) {
+    a.addEventListener("click", closeNav);
+  });
+
+  /* ---- topbar lift + back-to-top ---- */
+  function onScroll() {
+    var y = window.scrollY;
+    topbar.classList.toggle("lift", y > 24);
+    toTop.classList.toggle("show", y > 500);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---- scroll spy: highlight the section in view ---- */
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll("section[id]")
+  );
+
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var id = e.target.id;
+          links.forEach(function (a) {
+            a.classList.toggle("on", a.getAttribute("href") === "#" + id);
+          });
         });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    sections.forEach(function (s) {
+      spy.observe(s);
     });
+  }
 
-    $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
-    });
-
-    // Contact form: opens the visitor's email app with the message pre-filled
-    // (GitHub Pages is static, so there is no server to post to).
-    $("#contact-form").submit(function (event) {
-        event.preventDefault();
-        var f = this;
-        var subject = "Portfolio contact from " + f.name.value;
-        var body = f.message.value + "\n\n— " + f.name.value + "\n" + f.email.value +
-                   (f.phone.value ? "\n" + f.phone.value : "");
-        window.location.href = "mailto:ymohit799057@gmail.com?subject=" +
-            encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-        f.reset();
-    });
-});
-
-document.addEventListener('visibilitychange', function () {
-    if (document.visibilityState === "visible") {
-        document.title = "Mohit Yadav | GPU Systems & ML Infrastructure";
-        $("#favicon").attr("href", "assets/images/favicon.png");
-    } else {
-        document.title = "Come Back! 👋";
-        $("#favicon").attr("href", "assets/images/favhand.png");
-    }
-});
-
-// typed.js
-var typed = new Typed(".typing-text", {
-    strings: [
+  /* ---- typed headline ---- */
+  if (window.Typed) {
+    new Typed(".typing-text", {
+      strings: [
         "GPU systems",
         "Kubernetes ML infrastructure",
-        "CUDA & performance",
+        "CUDA and performance work",
         "LLM alignment research",
-        "open source at NVIDIA & Microsoft",
-    ],
-    loop: true,
-    typeSpeed: 55,
-    backSpeed: 28,
-    backDelay: 900,
-});
+        "open source at NVIDIA and Microsoft",
+      ],
+      loop: true,
+      typeSpeed: 52,
+      backSpeed: 26,
+      backDelay: 1100,
+    });
+  }
 
-// tilt
-VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 12 });
+  /* ---- contact form: hand the message to the visitor's mail app
+          (GitHub Pages is static, so there is no server to post to) ---- */
+  var form = document.getElementById("contact-form");
+  if (form) {
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var f = ev.target;
+      var subject = "Portfolio contact from " + f.name.value;
+      var body =
+        f.message.value +
+        "\n\n— " +
+        f.name.value +
+        "\n" +
+        f.email.value +
+        (f.phone.value ? "\n" + f.phone.value : "");
+      window.location.href =
+        "mailto:ymohit799057@gmail.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+      f.reset();
+    });
+  }
 
-// disable dev tools shortcuts
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-};
-
-/* ===== SCROLL REVEAL ===== */
-const srtop = ScrollReveal({ origin: 'top', distance: '60px', duration: 900, reset: false });
-
-srtop.reveal('.home .content h2',       { delay: 100 });
-srtop.reveal('.home .content p',        { delay: 200 });
-srtop.reveal('.home .content .btn',     { delay: 300 });
-srtop.reveal('.home .image',            { delay: 400 });
-srtop.reveal('.social-icons li',        { interval: 120, delay: 500 });
-
-srtop.reveal('.about .content h3',      { delay: 200 });
-srtop.reveal('.about .content .tag',    { delay: 250 });
-srtop.reveal('.about .content p',       { delay: 300 });
-srtop.reveal('.about-stats',            { delay: 350 });
-srtop.reveal('.about .content .resumebtn', { delay: 400 });
-
-srtop.reveal('.skill-category',         { interval: 150, delay: 200 });
-
-srtop.reveal('.oss-card',               { interval: 120, delay: 150 });
-srtop.reveal('.cert-card',              { interval: 100, delay: 150 });
-srtop.reveal('.pub-card',               { interval: 200, delay: 200 });
-
-srtop.reveal('.education .box',         { interval: 200 });
-
-srtop.reveal('.work .box',              { interval: 180 });
-
-srtop.reveal('.experience .timeline .container', { interval: 250 });
-
-srtop.reveal('.award-card',             { interval: 100, delay: 150 });
-
-srtop.reveal('.contact .container',     { delay: 300 });
+  /* ---- tab-away favicon + title ---- */
+  var favicon = document.getElementById("favicon");
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      document.title = "Mohit Yadav | GPU Systems & ML Infrastructure";
+      favicon.setAttribute("href", "./assets/images/favicon.png");
+    } else {
+      document.title = "Come back! 👋";
+      favicon.setAttribute("href", "./assets/images/favhand.png");
+    }
+  });
+})();

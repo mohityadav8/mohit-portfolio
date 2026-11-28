@@ -24,14 +24,29 @@ Personal portfolio covering my open-source work (NVIDIA aicr & NodeWright, Micro
 index.html                 main single-page site (all sections)
 404.html                   custom not-found page
 assets/
-  css/style.css            all styles
-  js/script.js             nav, typed text, scroll reveal, contact form
-  js/app.js                particles background config
+  css/style.css            design tokens + all styles
+  css/404.css              not-found page only (rides on style.css tokens)
+  js/script.js             nav, scroll spy, typed text, contact form
   images/profile.jpg       profile photo
   images/educat/           education images (university + school)
   Mohit_Yadav_CV.pdf       resume linked from "View Resume"
 experience/, projects/     redirect old URLs to the matching section
 ```
+
+### Theme
+
+The palette is a heat ramp — amber `#FFB302` through orange `#FF6B1A` to ember
+`#E0241B`, on a roasted ink base `#150B06`. All of it lives in the `:root` block
+at the top of `style.css`; change those variables and the whole site follows.
+
+The heat is not decoration: it encodes magnitude. Each open-source card, paper
+and award carries a `heat h1`–`h5` class, and the left rail runs hotter as the
+number goes up (`h5` = NVIDIA aicr at 25 merged PRs, `h1` = a single PR). When
+you add a contribution, pick the class that matches its size.
+
+Type is variable **Archivo** throughout — 900 weight at `wdth 125` for display,
+400 at normal width for body — with **JetBrains Mono** reserved for code, PR
+numbers and data labels.
 
 ### Updating content
 

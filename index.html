@@ -2,969 +2,984 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Mohit Yadav, portfolio, GPU systems, CUDA, ML infrastructure, Kubernetes, NVIDIA aicr, NodeWright, Kubescape, HAMi, OpenTofu, VS Code Python, open source, DPO, RLHF, LLM alignment" />
-    <meta name="description" content="Mohit Yadav — GPU Systems · CUDA & ML Infrastructure · Open Source. 65+ merged PRs across NVIDIA, Microsoft, Kubescape, HAMi, OpenTofu, SHAP and pgmpy." />
+    <meta name="description" content="Mohit Yadav — GPU systems, CUDA and ML infrastructure. 65+ merged pull requests across NVIDIA, Microsoft, Kubescape, HAMi, OpenTofu, SHAP and pgmpy." />
     <meta name="author" content="Mohit Yadav">
+    <meta name="theme-color" content="#150b06">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mohit Yadav | GPU Systems & ML Infrastructure">
+    <meta property="og:title" content="Mohit Yadav | GPU Systems &amp; ML Infrastructure">
     <meta property="og:description" content="Open-source contributor to NVIDIA, Microsoft, Kubescape, HAMi and OpenTofu. Author of a DPO vs. RLHF alignment preprint.">
     <meta property="og:url" content="https://mohityadav8.github.io/mohit-portfolio/">
     <meta property="og:image" content="https://mohityadav8.github.io/mohit-portfolio/assets/images/profile.jpg">
     <link rel="canonical" href="https://mohityadav8.github.io/mohit-portfolio/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
     <title>Mohit Yadav | GPU Systems &amp; ML Infrastructure</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- ===== NAVBAR ===== -->
-<header>
-    <a href="./" class="logo"><i class="fas fa-code"></i> Mohit</a>
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#opensource">Open Source</a></li>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#publications">Papers</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#awards">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- ================= NAV ================= -->
+<header class="topbar" id="topbar">
+    <div class="wrap">
+        <a href="#home" class="brand">MOHIT<s>/</s><b>YADAV</b></a>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#home" class="on">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#opensource">Open Source</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#publications">Papers</a></li>
+                <li><a href="#experience">Roles</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="./assets/Mohit_Yadav_CV.pdf" target="_blank" class="btn btn-sm nav-cta">
+            Resume <i class="fas fa-arrow-down"></i>
+        </a>
+        <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
 </header>
 
-<!-- ===== HERO ===== -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
-    <div class="content">
-        <h2>Hi There,<br/>I'm Mohit <span>Yadav</span></h2>
-        <p>i work on <span class="typing-text"></span></p>
-        <a href="#about" class="btn"><span>About Me</span>
-            <i class="fas fa-arrow-circle-down"></i>
-        </a>
-        <div class="socials">
-            <ul class="social-icons">
-                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mohit-yadav-6b2319305/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="github"   aria-label="GitHub"   href="https://github.com/mohityadav8" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
-                <li><a class="leetcode" aria-label="LeetCode" href="https://leetcode.com/u/mohityadav8/" target="_blank" rel="noopener"><i class="fas fa-code"></i></a></li>
-                <li><a class="twitter"  aria-label="Twitter"  href="https://x.com/MOHITYA13540069" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="scholar"  aria-label="Scholar"  href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=8ttWypQAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a class="orcid"    aria-label="ORCID"    href="https://orcid.org/0009-0000-0021-6379" target="_blank" rel="noopener"><i class="fas fa-id-badge"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Mohit Yadav">
-    </div>
-</section>
+<!-- ================= HERO ================= -->
+<main>
+<section class="hero" id="home">
+    <div class="wrap">
+        <div class="hero-grid">
+            <div>
+                <h1>Mohit<span>Yadav</span></h1>
 
-<!-- ===== ABOUT ===== -->
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    <div class="row">
-        <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Mohit Yadav">
-        </div>
-        <div class="content">
-            <h3>I'm Mohit Yadav</h3>
-            <span class="tag">GPU Systems · CUDA &amp; ML Infrastructure · Open Source</span>
+                <p class="hero-lede">I write the Kubernetes and GPU plumbing that keeps training clusters alive — and I ship it upstream, where other people have to run it.</p>
 
-            <p>Computer Science undergraduate at <strong>Chandigarh University</strong> (2024–2028) working on GPU systems, Kubernetes ML infrastructure and LLM alignment. I've had <strong>65+ pull requests merged</strong> across <strong>NVIDIA</strong> (AI Cluster Runtime, NodeWright), <strong>Microsoft</strong> (VS Code Python), Kubescape, Project-HAMi, OpenTofu, SHAP and pgmpy, and I'm credited by name in <strong>12 releases</strong>.</p>
-            <p>I'm a Triage Member on Kubescape (CNCF) and one of three coordinators of the Punjabi translation of the Python documentation. On the research side, I published a preprint comparing DPO and RLHF on GPT-2, trained end to end on a single 6 GB GPU.</p>
+                <p class="hero-typed">currently deep in <span class="typing-text"></span></p>
 
-            <div class="about-stats">
-                <div class="stat-card">
-                    <i class="fas fa-code-branch"></i>
-                    <h4>65+</h4>
-                    <p>PRs Merged</p>
+                <div class="hero-acts">
+                    <a href="#opensource" class="btn">See the merged work <i class="fas fa-arrow-down"></i></a>
+                    <a href="./assets/Mohit_Yadav_CV.pdf" target="_blank" class="btn btn-ghost">Resume <i class="fas fa-file-alt"></i></a>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-tags"></i>
-                    <h4>12</h4>
-                    <p>Release Credits</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-building"></i>
-                    <h4>10+</h4>
-                    <p>Organisations</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-file-alt"></i>
-                    <h4>2</h4>
-                    <p>Publications</p>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/mohityadav8" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mohit-yadav-6b2319305/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/mohityadav8/" aria-label="LeetCode" target="_blank" rel="noopener"><i class="fas fa-code"></i></a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=8ttWypQAAAAJ" aria-label="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/0009-0000-0021-6379" aria-label="ORCID" target="_blank" rel="noopener"><i class="fas fa-id-badge"></i></a>
+                    <a href="https://x.com/MOHITYA13540069" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
-            <div class="about-badges">
-                <span class="badge"><i class="fas fa-map-marker-alt"></i> Rajasthan, India</span>
-                <span class="badge"><i class="fas fa-envelope"></i> ymohit799057@gmail.com</span>
-                <span class="badge"><i class="fas fa-graduation-cap"></i> B.E. CSE 2024–2028</span>
-                <span class="badge open"><i class="fas fa-circle"></i> Open to Opportunities</span>
+            <div class="portrait">
+                <div class="portrait-frame">
+                    <img src="./assets/images/profile.jpg" alt="Mohit Yadav">
+                </div>
+                <div class="portrait-tag">
+                    <b>B.E. CSE · 2024–2028</b>
+                    Chandigarh University<br>
+                    <span class="dot"></span>Open to internships
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="resumebtn">
-                <a href="./assets/Mohit_Yadav_CV.pdf" target="_blank" class="btn">
-                    <span>View Resume</span>
-                    <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="https://github.com/mohityadav8" target="_blank" rel="noopener" class="btn btn-outline">
-                    <span>GitHub</span>
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=8ttWypQAAAAJ" target="_blank" rel="noopener" class="btn btn-outline btn-scholar">
-                    <span>Scholar</span>
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
+    <!-- ledger strip: the numbers, as a readout -->
+    <div class="ledger">
+        <div class="wrap">
+            <div class="ledger-grid">
+                <div class="ledger-cell">
+                    <b>65+</b>
+                    <span>pull requests merged</span>
+                    <i></i>
+                </div>
+                <div class="ledger-cell">
+                    <b>12</b>
+                    <span>release credits by name</span>
+                    <i></i>
+                </div>
+                <div class="ledger-cell">
+                    <b>10+</b>
+                    <span>organisations upstream</span>
+                    <i></i>
+                </div>
+                <div class="ledger-cell">
+                    <b>2</b>
+                    <span>publications</span>
+                    <i></i>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== SKILLS ===== -->
-<section class="skills" id="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills &amp; <span>Abilities</span></h2>
-    <div class="skills-categories">
-
-        <div class="skill-category">
-            <div class="skill-cat-header">
-                <i class="fas fa-terminal"></i>
-                <h4>Languages</h4>
-            </div>
-            <div class="skill-pills">
-                <span class="pill pill-lang">Python</span>
-                <span class="pill pill-lang">C++</span>
-                <span class="pill pill-lang">Go</span>
-                <span class="pill pill-lang">TypeScript</span>
-                <span class="pill pill-lang">JavaScript</span>
-                <span class="pill pill-lang">Bash</span>
-            </div>
+<!-- ================= ABOUT ================= -->
+<section class="band" id="about">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>What I actually <em>work on</em></h2>
+            <div class="rule"></div>
         </div>
 
-        <div class="skill-category skill-cat-interp">
-            <div class="skill-cat-header">
-                <i class="fas fa-microchip"></i>
-                <h4>GPU &amp; Systems</h4>
-            </div>
-            <div class="skill-pills">
-                <span class="pill pill-interp">Kubernetes</span>
-                <span class="pill pill-interp">Kubeflow</span>
-                <span class="pill pill-interp">CUDA</span>
-                <span class="pill pill-interp">GPU Scheduling</span>
-                <span class="pill pill-interp">NCCL</span>
-                <span class="pill pill-interp">DCGM</span>
-                <span class="pill pill-interp">Helm</span>
-                <span class="pill pill-interp">Prometheus</span>
-                <span class="pill pill-interp">KWOK</span>
-                <span class="pill pill-interp">Chainsaw</span>
-                <span class="pill pill-interp">Docker</span>
-            </div>
-        </div>
+        <div class="about-grid">
+            <div class="about-copy">
+                <p class="role">GPU systems / CUDA / ML infrastructure / open source</p>
+                <p>Computer Science undergraduate at <strong>Chandigarh University</strong> (2024–2028) working on GPU systems, Kubernetes ML infrastructure and LLM alignment. I've had <strong>65+ pull requests merged</strong> across <strong>NVIDIA</strong> (AI Cluster Runtime, NodeWright), <strong>Microsoft</strong> (VS Code Python), Kubescape, Project-HAMi, OpenTofu, SHAP and pgmpy, and I'm credited by name in <strong>12 releases</strong>.</p>
+                <p>I'm a Triage Member on Kubescape (CNCF) and one of three coordinators of the Punjabi translation of the Python documentation. On the research side, I published a preprint comparing DPO and RLHF on GPT-2, trained end to end on a single 6 GB GPU.</p>
 
-        <div class="skill-category skill-cat-featured">
-            <div class="skill-cat-header">
-                <i class="fas fa-brain"></i>
-                <h4>AI / ML</h4>
+                <div class="about-acts">
+                    <a href="./assets/Mohit_Yadav_CV.pdf" target="_blank" class="btn">View resume <i class="fas fa-file-alt"></i></a>
+                    <a href="https://github.com/mohityadav8" target="_blank" rel="noopener" class="btn btn-ghost">GitHub <i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=8ttWypQAAAAJ" target="_blank" rel="noopener" class="btn btn-ghost">Scholar <i class="fas fa-graduation-cap"></i></a>
+                </div>
             </div>
-            <div class="skill-pills">
-                <span class="pill pill-ml">PyTorch</span>
-                <span class="pill pill-ml">HuggingFace Transformers</span>
-                <span class="pill pill-ml">scikit-learn</span>
-                <span class="pill pill-ml">NumPy</span>
-                <span class="pill pill-ml">Pandas</span>
-                <span class="pill pill-ml">SHAP</span>
-                <span class="pill pill-ml">TransformerLens</span>
-                <span class="pill pill-ml">ML Benchmarking</span>
-                <span class="pill pill-ml">Model Evaluation</span>
-            </div>
-        </div>
 
-        <div class="skill-category skill-cat-featured">
-            <div class="skill-cat-header">
-                <i class="fas fa-robot"></i>
-                <h4>LLMs &amp; Alignment</h4>
-            </div>
-            <div class="skill-pills">
-                <span class="pill pill-ml">TRL</span>
-                <span class="pill pill-ml">RLHF (PPO)</span>
-                <span class="pill pill-ml">DPO</span>
-                <span class="pill pill-ml">Reward Modeling</span>
-                <span class="pill pill-ml">Transformer Models</span>
-                <span class="pill pill-ml">Prompt Engineering</span>
-            </div>
+            <aside class="about-side">
+                <span class="open-now"><span class="dot"></span> Open to opportunities</span>
+                <div class="facts">
+                    <div class="fact"><i class="fas fa-map-marker-alt"></i><span>Rajasthan, India</span></div>
+                    <div class="fact"><i class="fas fa-envelope"></i><a href="mailto:ymohit799057@gmail.com">ymohit799057@gmail.com</a></div>
+                    <div class="fact"><i class="fas fa-graduation-cap"></i><span>B.E. Computer Science &amp; Engineering, 2024–2028</span></div>
+                    <div class="fact"><i class="fas fa-user-shield"></i><span><b>Triage Member</b> — Kubescape, CNCF</span></div>
+                    <div class="fact"><i class="fas fa-language"></i><span><b>Coordinator</b> — Punjabi translation, Python docs</span></div>
+                    <div class="fact"><i class="fas fa-microchip"></i><span>Named in <b>12 release notes</b> at NVIDIA and pgmpy</span></div>
+                </div>
+            </aside>
         </div>
-
-        <div class="skill-category">
-            <div class="skill-cat-header">
-                <i class="fas fa-server"></i>
-                <h4>Backend &amp; Web</h4>
-            </div>
-            <div class="skill-pills">
-                <span class="pill pill-back">FastAPI</span>
-                <span class="pill pill-back">Django</span>
-                <span class="pill pill-back">Flask</span>
-                <span class="pill pill-back">SQLAlchemy</span>
-                <span class="pill pill-back">PostgreSQL</span>
-                <span class="pill pill-back">SQLite</span>
-                <span class="pill pill-back">REST APIs</span>
-                <span class="pill pill-front">React</span>
-            </div>
-        </div>
-
-        <div class="skill-category">
-            <div class="skill-cat-header">
-                <i class="fas fa-tools"></i>
-                <h4>Tools</h4>
-            </div>
-            <div class="skill-pills">
-                <span class="pill pill-tool">Git</span>
-                <span class="pill pill-tool">GitHub Actions</span>
-                <span class="pill pill-tool">Linux</span>
-                <span class="pill pill-tool">LaTeX</span>
-                <span class="pill pill-tool">Anthropic SDK</span>
-                <span class="pill pill-tool">VS Code</span>
-            </div>
-        </div>
-
     </div>
 </section>
 
-<!-- ===== OPEN SOURCE CONTRIBUTIONS ===== -->
-<section class="oss" id="opensource">
-    <h2 class="heading"><i class="fas fa-code-branch"></i> Open Source <span>Contributions</span></h2>
-    <p class="oss-intro">Merged work in production projects, linked to the actual pull requests.</p>
+<!-- ================= SKILLS ================= -->
+<section class="band" id="skills">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Tools I reach for</h2>
+            <div class="rule"></div>
+        </div>
 
-    <div class="oss-grid">
+        <div class="skillrow">
+            <h3><i class="fas fa-terminal"></i> Languages</h3>
+            <div class="pills">
+                <span class="pill pill-gold">Python</span>
+                <span class="pill pill-gold">C++</span>
+                <span class="pill pill-gold">Go</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Bash</span>
+            </div>
+        </div>
 
-        <!-- NVIDIA aicr -->
-        <article class="oss-card oss-featured">
-            <div class="oss-head">
-                <div class="oss-logo oss-nvidia"><i class="fas fa-microchip"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/NVIDIA/aicr" target="_blank" rel="noopener">NVIDIA · aicr</a></h3>
-                    <p>AI Cluster Runtime for Kubernetes</p>
-                </div>
-                <span class="oss-date">2026</span>
+        <div class="skillrow">
+            <h3><i class="fas fa-microchip"></i> GPU &amp; systems</h3>
+            <div class="pills">
+                <span class="pill pill-hot">Kubernetes</span>
+                <span class="pill pill-hot">CUDA</span>
+                <span class="pill pill-hot">GPU scheduling</span>
+                <span class="pill">Kubeflow</span>
+                <span class="pill">NCCL</span>
+                <span class="pill">DCGM</span>
+                <span class="pill">Helm</span>
+                <span class="pill">Prometheus</span>
+                <span class="pill">KWOK</span>
+                <span class="pill">Chainsaw</span>
+                <span class="pill">Docker</span>
             </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 25 merged PRs</span>
-                <span><i class="fas fa-tag"></i> 7 release credits</span>
-                <span><i class="fas fa-user"></i> Contributor</span>
-            </div>
-            <ul>
-                <li>Wrote the Kubeflow training recipes for RTX PRO 6000 on EKS (3 variants) and finished the sxid fault-injection UAT phase: detection always runs, quarantine and recovery sit behind env flags, 33/33 shell tests (<a href="https://github.com/NVIDIA/aicr/pull/1857" target="_blank" rel="noopener">#1857</a>, <a href="https://github.com/NVIDIA/aicr/pull/3028" target="_blank" rel="noopener">#3028</a>).</li>
-                <li>Fixed a check-then-use bug in <code>aicr bundle --attest</code>: the attestation was verified, then reopened and copied, so a swapped file could ship unverified. It now reads once and verifies that buffer (<a href="https://github.com/NVIDIA/aicr/pull/3539" target="_blank" rel="noopener">#3539</a>). Also stopped a goroutine leak on every HTTP retry (<a href="https://github.com/NVIDIA/aicr/pull/3522" target="_blank" rel="noopener">#3522</a>).</li>
-                <li>Moved Actions inputs into <code>env:</code> after zizmor flagged template injection (<a href="https://github.com/NVIDIA/aicr/pull/3168" target="_blank" rel="noopener">#3168</a>); folded three KWOK workflows into one shared runner (<a href="https://github.com/NVIDIA/aicr/pull/1790" target="_blank" rel="noopener">#1790</a>); added OpenShift variants of 4 components (<a href="https://github.com/NVIDIA/aicr/pull/2057" target="_blank" rel="noopener">#2057</a>) and CRD checks for 6 operators (<a href="https://github.com/NVIDIA/aicr/pull/1919" target="_blank" rel="noopener">#1919</a>).</li>
-                <li>Added Prometheus/Alertmanager readiness checks and GPU toleration injection (<a href="https://github.com/NVIDIA/aicr/pull/1497" target="_blank" rel="noopener">#1497</a>, <a href="https://github.com/NVIDIA/aicr/pull/1471" target="_blank" rel="noopener">#1471</a>); fixed status reporting for nodes without a GPU driver (<a href="https://github.com/NVIDIA/aicr/pull/3139" target="_blank" rel="noopener">#3139</a>) and aligned AKS Kubernetes version floors with DRA (<a href="https://github.com/NVIDIA/aicr/pull/1908" target="_blank" rel="noopener">#1908</a>).</li>
-            </ul>
-            <div class="oss-releases">
-                <span class="oss-rel-label">Named in release notes:</span>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.16.0" target="_blank" rel="noopener">v0.16</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.17.0" target="_blank" rel="noopener">v0.17</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.18.0" target="_blank" rel="noopener">v0.18</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.19.0" target="_blank" rel="noopener">v0.19</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.21.0" target="_blank" rel="noopener">v0.21</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.22.0" target="_blank" rel="noopener">v0.22</a>
-                <a href="https://github.com/NVIDIA/aicr/releases/tag/v1.0.0" target="_blank" rel="noopener">v1.0.0</a>
-            </div>
-            <a class="oss-all" href="https://github.com/NVIDIA/aicr/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
-        </article>
+        </div>
 
-        <!-- NVIDIA nodewright -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-nvidia"><i class="fas fa-network-wired"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/NVIDIA/nodewright" target="_blank" rel="noopener">NVIDIA · NodeWright</a></h3>
-                    <p>Kubernetes node-lifecycle operator (formerly Skyhook)</p>
-                </div>
-                <span class="oss-date">2026</span>
+        <div class="skillrow">
+            <h3><i class="fas fa-brain"></i> AI / ML</h3>
+            <div class="pills">
+                <span class="pill pill-hot">PyTorch</span>
+                <span class="pill pill-hot">HuggingFace Transformers</span>
+                <span class="pill">scikit-learn</span>
+                <span class="pill">NumPy</span>
+                <span class="pill">Pandas</span>
+                <span class="pill">SHAP</span>
+                <span class="pill">TransformerLens</span>
+                <span class="pill">ML benchmarking</span>
+                <span class="pill">Model evaluation</span>
             </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 9 merged PRs</span>
-                <span><i class="fas fa-tag"></i> 4 release credits</span>
-            </div>
-            <ul>
-                <li>Added a <code>DrainBlocked</code> condition for pods that block a node drain (PDBs, unmanaged pods, emptyDir); it was log-only before. PDB rejections no longer abort the reconcile, and blocked nodes requeue every 30 s instead of 2 s (<a href="https://github.com/NVIDIA/nodewright/pull/625" target="_blank" rel="noopener">#625</a>, +829/−75 lines).</li>
-                <li>Fixed 3 flaky tests (<a href="https://github.com/NVIDIA/nodewright/pull/389" target="_blank" rel="noopener">#389</a>, <a href="https://github.com/NVIDIA/nodewright/pull/400" target="_blank" rel="noopener">#400</a>, <a href="https://github.com/NVIDIA/nodewright/pull/480" target="_blank" rel="noopener">#480</a>) and helped with the Skyhook-to-NodeWright rename (<a href="https://github.com/NVIDIA/nodewright/pull/410" target="_blank" rel="noopener">#410</a>) and the Go agent's license merge gate (<a href="https://github.com/NVIDIA/nodewright/pull/537" target="_blank" rel="noopener">#537</a>).</li>
-            </ul>
-            <div class="oss-releases">
-                <span class="oss-rel-label">Named in release notes:</span>
-                <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.18.0" target="_blank" rel="noopener">operator v0.18.0</a>
-                <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.19.0" target="_blank" rel="noopener">v0.19.0</a>
-                <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.20.0" target="_blank" rel="noopener">v0.20.0</a>
-                <a href="https://github.com/NVIDIA/nodewright/releases/tag/agent/v7.0.0" target="_blank" rel="noopener">agent v7.0.0</a>
-            </div>
-            <a class="oss-all" href="https://github.com/NVIDIA/nodewright/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
-        </article>
+        </div>
 
-        <!-- Microsoft -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-ms"><i class="fab fa-microsoft"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/microsoft" target="_blank" rel="noopener">Microsoft</a></h3>
-                    <p>VS Code, Python extension &amp; Python Environments</p>
-                </div>
-                <span class="oss-date">Jun – Oct 2026</span>
+        <div class="skillrow">
+            <h3><i class="fas fa-robot"></i> LLMs &amp; alignment</h3>
+            <div class="pills">
+                <span class="pill pill-hot">DPO</span>
+                <span class="pill pill-hot">RLHF (PPO)</span>
+                <span class="pill">TRL</span>
+                <span class="pill">Reward modeling</span>
+                <span class="pill">Transformer models</span>
+                <span class="pill">Prompt engineering</span>
             </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 4 merged PRs</span>
-            </div>
-            <ul>
-                <li>Fixed <code>onDidChangePythonProjects</code> never firing for projects added at runtime, so Pylance's per-folder interpreters only saw new projects after a restart (<a href="https://github.com/microsoft/vscode-python-environments/pull/1641" target="_blank" rel="noopener">#1641</a>).</li>
-                <li>Fixed the REPL prompt vanishing when a <code>PYTHONSTARTUP</code> script shadows builtins, with a regression test (<a href="https://github.com/microsoft/vscode-python/pull/26045" target="_blank" rel="noopener">#26045</a>).</li>
-                <li>Added a context key so the Python activity-bar icon only shows in workspaces with Python files (<a href="https://github.com/microsoft/vscode-python-environments/pull/1663" target="_blank" rel="noopener">#1663</a>); fixed doc typos in VS Code (<a href="https://github.com/microsoft/vscode/pull/317718" target="_blank" rel="noopener">#317718</a>).</li>
-            </ul>
-            <div class="oss-releases">
-                <span class="oss-rel-label">Repos:</span>
-                <a href="https://github.com/microsoft/vscode-python" target="_blank" rel="noopener">vscode-python</a>
-                <a href="https://github.com/microsoft/vscode-python-environments" target="_blank" rel="noopener">python-environments</a>
-                <a href="https://github.com/microsoft/vscode" target="_blank" rel="noopener">vscode</a>
-            </div>
-        </article>
+        </div>
 
-        <!-- Kubescape -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-cncf"><i class="fas fa-shield-alt"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/kubescape/kubescape" target="_blank" rel="noopener">Kubescape</a></h3>
-                    <p>CNCF Kubernetes security scanner</p>
-                </div>
-                <span class="oss-date">2026</span>
+        <div class="skillrow">
+            <h3><i class="fas fa-server"></i> Backend &amp; web</h3>
+            <div class="pills">
+                <span class="pill pill-gold">FastAPI</span>
+                <span class="pill">Django</span>
+                <span class="pill">Flask</span>
+                <span class="pill">SQLAlchemy</span>
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">SQLite</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">React</span>
             </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 14 merged PRs</span>
-                <span><i class="fas fa-bug"></i> 17 issues opened</span>
-                <span><i class="fas fa-user-shield"></i> Triage Member</span>
-            </div>
-            <ul>
-                <li>Added <code>--format policyreport</code> output (PolicyReport and ClusterPolicyReport, readable by Policy Reporter; <a href="https://github.com/kubescape/kubescape/pull/3125" target="_blank" rel="noopener">#3125</a>, +371 lines).</li>
-                <li>Added 7 RBAC detection rules: impersonate, token mint, escalate, bind, node proxy, PV create and ephemeral-container attach (<a href="https://github.com/kubescape/kubescape/pull/3093" target="_blank" rel="noopener">#3093</a>, <a href="https://github.com/kubescape/kubescape/pull/3017" target="_blank" rel="noopener">#3017</a>).</li>
-                <li>Added <code>--baseline</code> drift detection, <code>--incremental</code> caching, Terraform <code>kubernetes_*</code> scanning and attack-path phase 1 (<a href="https://github.com/kubescape/kubescape/pull/3353" target="_blank" rel="noopener">#3353</a>, <a href="https://github.com/kubescape/kubescape/pull/3412" target="_blank" rel="noopener">#3412</a>, <a href="https://github.com/kubescape/kubescape/pull/3019" target="_blank" rel="noopener">#3019</a>, <a href="https://github.com/kubescape/kubescape/pull/3944" target="_blank" rel="noopener">#3944</a>).</li>
-            </ul>
-            <div class="oss-links">
-                <a class="oss-all" href="https://github.com/kubescape/kubescape/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">Merged PRs <i class="fas fa-arrow-right"></i></a>
-                <a class="oss-all" href="https://github.com/kubescape/kubescape/issues?q=is%3Aissue+author%3Amohityadav8" target="_blank" rel="noopener">Issues <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
+        </div>
 
-        <!-- HAMi -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-cncf"><i class="fas fa-memory"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/Project-HAMi/HAMi" target="_blank" rel="noopener">Project-HAMi</a></h3>
-                    <p>CNCF Sandbox · Kubernetes GPU sharing</p>
-                </div>
-                <span class="oss-date">2026</span>
+        <div class="skillrow">
+            <h3><i class="fas fa-tools"></i> Tooling</h3>
+            <div class="pills">
+                <span class="pill">Git</span>
+                <span class="pill">GitHub Actions</span>
+                <span class="pill">Linux</span>
+                <span class="pill">LaTeX</span>
+                <span class="pill">Anthropic SDK</span>
+                <span class="pill">VS Code</span>
             </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 2 merged PRs</span>
-            </div>
-            <ul>
-                <li>Added per-GPU cordon: the <code>hami.io/device-cordon</code> node annotation takes listed GPU UUIDs out of new placements in the scheduler's <code>Fit()</code>, with no plugin restart (<a href="https://github.com/Project-HAMi/HAMi/pull/2298" target="_blank" rel="noopener">#2298</a>).</li>
-                <li>Fixed a stale cache that ignored annotation-only changes, with 2 regression tests (<a href="https://github.com/Project-HAMi/HAMi/pull/3332" target="_blank" rel="noopener">#3332</a>).</li>
-            </ul>
-            <a class="oss-all" href="https://github.com/Project-HAMi/HAMi/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
-        </article>
-
-        <!-- OpenTofu -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-tofu"><i class="fas fa-cube"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/opentofu/opentofu" target="_blank" rel="noopener">OpenTofu</a></h3>
-                    <p>Open-source infrastructure as code</p>
-                </div>
-                <span class="oss-date">Oct 2026</span>
-            </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 1 merged PR</span>
-            </div>
-            <ul>
-                <li>Fixed lint-directive matching: a disable for one rule was also hiding other rules on the same construct. It now suppresses only the rule or group it names (<code>core:all</code> still hides everything) and handles stacked directives (<a href="https://github.com/opentofu/opentofu/pull/4730" target="_blank" rel="noopener">#4730</a>, +126/−12 lines, new test).</li>
-            </ul>
-        </article>
-
-        <!-- PSF -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-py"><i class="fab fa-python"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://devguide.python.org/documentation/translations/translating/" target="_blank" rel="noopener">Python Software Foundation</a></h3>
-                    <p>Python Documentation · Punjabi Translation Coordinator</p>
-                </div>
-                <span class="oss-date">Jul 2026 – present</span>
-            </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-language"></i> Coordinator</span>
-            </div>
-            <ul>
-                <li>One of three coordinators listed for the Punjabi translation of the Python docs in the CPython Devguide, added via merged PR <a href="https://github.com/python/devguide/pull/1870" target="_blank" rel="noopener">#1870</a>.</li>
-            </ul>
-            <a class="oss-all" href="https://docs.python.org/pa/" target="_blank" rel="noopener">docs.python.org/pa <i class="fas fa-arrow-right"></i></a>
-        </article>
-
-        <!-- SHAP -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-ml"><i class="fas fa-chart-bar"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/shap/shap" target="_blank" rel="noopener">SHAP</a></h3>
-                    <p>ML interpretability library</p>
-                </div>
-                <span class="oss-date">2026</span>
-            </div>
-            <ul>
-                <li>Wrote a Treelite model loader so <code>TreeExplainer</code> can explain compiled Treelite models; reviewed by Treelite's author (<a href="https://github.com/shap/shap/pull/5059" target="_blank" rel="noopener">#5059</a>).</li>
-                <li>Fixed a CUDA build failure (<a href="https://github.com/shap/shap/pull/4322" target="_blank" rel="noopener">#4322</a>) and added 65 unit tests for KernelExplainer edge cases (<a href="https://github.com/shap/shap/pull/4703" target="_blank" rel="noopener">#4703</a>).</li>
-            </ul>
-        </article>
-
-        <!-- pgmpy -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-ml"><i class="fas fa-project-diagram"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/pgmpy/pgmpy" target="_blank" rel="noopener">pgmpy</a></h3>
-                    <p>Probabilistic graphical models library</p>
-                </div>
-                <span class="oss-date">Mar 2026</span>
-            </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 2 merged PRs</span>
-                <span><i class="fas fa-tag"></i> v1.1.0 release credit</span>
-            </div>
-            <ul>
-                <li>Added input validation to stop silent data corruption in model fitting (<a href="https://github.com/pgmpy/pgmpy/pull/2994" target="_blank" rel="noopener">#2994</a>, <a href="https://github.com/pgmpy/pgmpy/pull/2743" target="_blank" rel="noopener">#2743</a>); credited in the <a href="https://github.com/pgmpy/pgmpy/discussions/3270" target="_blank" rel="noopener">v1.1.0 release notes</a>.</li>
-                <li>Assigned by a maintainer to fix three bugs in the ExpertInLoop causal discovery algorithm (<a href="https://github.com/pgmpy/pgmpy/issues/3206" target="_blank" rel="noopener">#3206</a>).</li>
-            </ul>
-        </article>
-
-        <!-- OWASP -->
-        <article class="oss-card">
-            <div class="oss-head">
-                <div class="oss-logo oss-owasp"><i class="fas fa-user-shield"></i></div>
-                <div class="oss-title">
-                    <h3><a href="https://github.com/OWASP/Nest" target="_blank" rel="noopener">OWASP Foundation</a></h3>
-                    <p>Nest &amp; PyGoat · AI Lead Engineer</p>
-                </div>
-                <span class="oss-date">Mar – Jul 2026</span>
-            </div>
-            <div class="oss-chips">
-                <span><i class="fas fa-check-circle"></i> 6 merged PyGoat PRs</span>
-            </div>
-            <ul>
-                <li>Built logging for Nest's Slack AI assistant that records each reply's intent, confidence, tokens and user reactions (<a href="https://github.com/OWASP/Nest/pull/5035" target="_blank" rel="noopener">#5035</a>).</li>
-                <li>Fixed broken access-control routing in PyGoat (<a href="https://github.com/adeyosemanputra/pygoat/pull/471" target="_blank" rel="noopener">#471</a>, <a href="https://github.com/adeyosemanputra/pygoat/pull/469" target="_blank" rel="noopener">#469</a>) and built a learner progress dashboard (<a href="https://github.com/adeyosemanputra/pygoat/pull/525" target="_blank" rel="noopener">#525</a>).</li>
-            </ul>
-        </article>
-
+        </div>
     </div>
 </section>
 
-<!-- ===== PROJECTS ===== -->
-<section class="work" id="work">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Featured <span>Projects</span></h2>
-    <div class="box-container">
-
-        <!-- GPU Lens — FEATURED -->
-        <div class="box tilt proj-card proj-featured">
-            <div class="proj-header" style="background:linear-gradient(135deg,#04210f,#0b3a1c)">
-                <div class="proj-icon-wrap"><i class="fas fa-microchip"></i></div>
-                <div class="proj-tag-top">GPU Infra · Feb 2026 – now</div>
-            </div>
-            <div class="proj-body">
-                <h3>GPU Lens</h3>
-                <p>Self-hosted, read-only reliability and capacity console for GPU clusters. Six deterministic rules join DCGM and Prometheus data with Kubernetes pod and node state into incident reports with evidence for and against. <strong>Missing data never reads as healthy</strong>: GPUs silent for 180 s raise their own incident. No LLM calls; 9 Go test files, 6 offline scenarios.</p>
-                <div class="tech-stack">
-                    <span>Go</span><span>Python</span><span>Kubernetes</span><span>Prometheus</span><span>DCGM</span><span>React</span><span>TypeScript</span>
-                </div>
-                <div class="btns">
-                    <a href="https://gpu-lens.onrender.com" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> Live Demo</a>
-                    <a href="https://github.com/Sievehouse/gpu-lens" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
-                </div>
-            </div>
+<!-- ================= OPEN SOURCE ================= -->
+<section class="band" id="opensource">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Open source, <em>with the PR numbers</em></h2>
+            <p>Merged work in production projects. The bar on the left of each card runs hotter the more I shipped there.</p>
+            <div class="rule"></div>
         </div>
 
-        <!-- DPO vs RLHF — FEATURED -->
-        <div class="box tilt proj-card proj-featured">
-            <div class="proj-header" style="background:linear-gradient(135deg,#0d0d2b,#1a1040)">
-                <div class="proj-icon-wrap"><i class="fas fa-brain"></i></div>
-                <div class="proj-tag-top">LLM Alignment · Research</div>
-            </div>
-            <div class="proj-body">
-                <h3>DPO vs. RLHF Alignment Study</h3>
-                <p>Fine-tuned GPT-2 (124M) with DPO (β = 0.1) and with RLHF (SFT → Bradley–Terry reward model → PPO) on 160,800 Anthropic HH-RLHF pairs, all on one 6 GB RTX 3050. DPO reached <strong>71% reward accuracy</strong> (from 41%) with a 0.640 margin and no reward model. Published as a CC BY 4.0 preprint on Zenodo.</p>
-                <div class="tech-stack">
-                    <span>PyTorch</span><span>HuggingFace</span><span>TRL</span><span>GPT-2</span><span>DPO</span><span>RLHF/PPO</span>
+        <div class="oss-grid">
+
+            <!-- NVIDIA aicr -->
+            <article class="oss oss-wide heat h5">
+                <div class="oss-head">
+                    <div class="oss-mark hot"><i class="fas fa-microchip"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/NVIDIA/aicr" target="_blank" rel="noopener">NVIDIA — aicr</a></h3>
+                        <p>AI Cluster Runtime for Kubernetes</p>
+                    </div>
+                    <span class="oss-when">2026</span>
                 </div>
-                <div class="btns">
-                    <a href="https://doi.org/10.5281/zenodo.20578480" class="btn" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a>
-                    <a href="https://github.com/AnthropicBots/dpo-vs-rlhf-alignmet-study" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 25 merged PRs</span>
+                    <span><i class="fas fa-tag"></i> 7 release credits</span>
+                    <span><i class="fas fa-user"></i> Contributor</span>
                 </div>
-            </div>
+                <ul>
+                    <li>Wrote the Kubeflow training recipes for RTX PRO 6000 on EKS (3 variants) and finished the sxid fault-injection UAT phase: detection always runs, quarantine and recovery sit behind env flags, 33/33 shell tests (<a href="https://github.com/NVIDIA/aicr/pull/1857" target="_blank" rel="noopener">#1857</a>, <a href="https://github.com/NVIDIA/aicr/pull/3028" target="_blank" rel="noopener">#3028</a>).</li>
+                    <li>Fixed a check-then-use bug in <code>aicr bundle --attest</code>: the attestation was verified, then reopened and copied, so a swapped file could ship unverified. It now reads once and verifies that buffer (<a href="https://github.com/NVIDIA/aicr/pull/3539" target="_blank" rel="noopener">#3539</a>). Also stopped a goroutine leak on every HTTP retry (<a href="https://github.com/NVIDIA/aicr/pull/3522" target="_blank" rel="noopener">#3522</a>).</li>
+                    <li>Moved Actions inputs into <code>env:</code> after zizmor flagged template injection (<a href="https://github.com/NVIDIA/aicr/pull/3168" target="_blank" rel="noopener">#3168</a>); folded three KWOK workflows into one shared runner (<a href="https://github.com/NVIDIA/aicr/pull/1790" target="_blank" rel="noopener">#1790</a>); added OpenShift variants of 4 components (<a href="https://github.com/NVIDIA/aicr/pull/2057" target="_blank" rel="noopener">#2057</a>) and CRD checks for 6 operators (<a href="https://github.com/NVIDIA/aicr/pull/1919" target="_blank" rel="noopener">#1919</a>).</li>
+                    <li>Added Prometheus/Alertmanager readiness checks and GPU toleration injection (<a href="https://github.com/NVIDIA/aicr/pull/1497" target="_blank" rel="noopener">#1497</a>, <a href="https://github.com/NVIDIA/aicr/pull/1471" target="_blank" rel="noopener">#1471</a>); fixed status reporting for nodes without a GPU driver (<a href="https://github.com/NVIDIA/aicr/pull/3139" target="_blank" rel="noopener">#3139</a>) and aligned AKS Kubernetes version floors with DRA (<a href="https://github.com/NVIDIA/aicr/pull/1908" target="_blank" rel="noopener">#1908</a>).</li>
+                </ul>
+                <div class="releases">
+                    <b>Named in release notes</b>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.16.0" target="_blank" rel="noopener">v0.16</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.17.0" target="_blank" rel="noopener">v0.17</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.18.0" target="_blank" rel="noopener">v0.18</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.19.0" target="_blank" rel="noopener">v0.19</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.21.0" target="_blank" rel="noopener">v0.21</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v0.22.0" target="_blank" rel="noopener">v0.22</a>
+                    <a href="https://github.com/NVIDIA/aicr/releases/tag/v1.0.0" target="_blank" rel="noopener">v1.0.0</a>
+                </div>
+                <div class="oss-more">
+                    <a href="https://github.com/NVIDIA/aicr/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Kubescape -->
+            <article class="oss heat h4">
+                <div class="oss-head">
+                    <div class="oss-mark hot"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/kubescape/kubescape" target="_blank" rel="noopener">Kubescape</a></h3>
+                        <p>CNCF Kubernetes security scanner</p>
+                    </div>
+                    <span class="oss-when">2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 14 merged PRs</span>
+                    <span><i class="fas fa-bug"></i> 17 issues opened</span>
+                    <span><i class="fas fa-user-shield"></i> Triage Member</span>
+                </div>
+                <ul>
+                    <li>Added <code>--format policyreport</code> output (PolicyReport and ClusterPolicyReport, readable by Policy Reporter; <a href="https://github.com/kubescape/kubescape/pull/3125" target="_blank" rel="noopener">#3125</a>, +371 lines).</li>
+                    <li>Added 7 RBAC detection rules: impersonate, token mint, escalate, bind, node proxy, PV create and ephemeral-container attach (<a href="https://github.com/kubescape/kubescape/pull/3093" target="_blank" rel="noopener">#3093</a>, <a href="https://github.com/kubescape/kubescape/pull/3017" target="_blank" rel="noopener">#3017</a>).</li>
+                    <li>Added <code>--baseline</code> drift detection, <code>--incremental</code> caching, Terraform <code>kubernetes_*</code> scanning and attack-path phase 1 (<a href="https://github.com/kubescape/kubescape/pull/3353" target="_blank" rel="noopener">#3353</a>, <a href="https://github.com/kubescape/kubescape/pull/3412" target="_blank" rel="noopener">#3412</a>, <a href="https://github.com/kubescape/kubescape/pull/3019" target="_blank" rel="noopener">#3019</a>, <a href="https://github.com/kubescape/kubescape/pull/3944" target="_blank" rel="noopener">#3944</a>).</li>
+                </ul>
+                <div class="oss-more">
+                    <a href="https://github.com/kubescape/kubescape/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">Merged PRs <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/kubescape/kubescape/issues?q=is%3Aissue+author%3Amohityadav8" target="_blank" rel="noopener">Issues <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- NVIDIA NodeWright -->
+            <article class="oss heat h4">
+                <div class="oss-head">
+                    <div class="oss-mark"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/NVIDIA/nodewright" target="_blank" rel="noopener">NVIDIA — NodeWright</a></h3>
+                        <p>Kubernetes node-lifecycle operator (formerly Skyhook)</p>
+                    </div>
+                    <span class="oss-when">2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 9 merged PRs</span>
+                    <span><i class="fas fa-tag"></i> 4 release credits</span>
+                </div>
+                <ul>
+                    <li>Added a <code>DrainBlocked</code> condition for pods that block a node drain (PDBs, unmanaged pods, emptyDir); it was log-only before. PDB rejections no longer abort the reconcile, and blocked nodes requeue every 30 s instead of 2 s (<a href="https://github.com/NVIDIA/nodewright/pull/625" target="_blank" rel="noopener">#625</a>, +829/−75 lines).</li>
+                    <li>Fixed 3 flaky tests (<a href="https://github.com/NVIDIA/nodewright/pull/389" target="_blank" rel="noopener">#389</a>, <a href="https://github.com/NVIDIA/nodewright/pull/400" target="_blank" rel="noopener">#400</a>, <a href="https://github.com/NVIDIA/nodewright/pull/480" target="_blank" rel="noopener">#480</a>) and helped with the Skyhook-to-NodeWright rename (<a href="https://github.com/NVIDIA/nodewright/pull/410" target="_blank" rel="noopener">#410</a>) and the Go agent's license merge gate (<a href="https://github.com/NVIDIA/nodewright/pull/537" target="_blank" rel="noopener">#537</a>).</li>
+                </ul>
+                <div class="releases">
+                    <b>Named in release notes</b>
+                    <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.18.0" target="_blank" rel="noopener">operator v0.18.0</a>
+                    <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.19.0" target="_blank" rel="noopener">v0.19.0</a>
+                    <a href="https://github.com/NVIDIA/nodewright/releases/tag/operator/v0.20.0" target="_blank" rel="noopener">v0.20.0</a>
+                    <a href="https://github.com/NVIDIA/nodewright/releases/tag/agent/v7.0.0" target="_blank" rel="noopener">agent v7.0.0</a>
+                </div>
+                <div class="oss-more">
+                    <a href="https://github.com/NVIDIA/nodewright/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- OWASP -->
+            <article class="oss heat h3">
+                <div class="oss-head">
+                    <div class="oss-mark"><i class="fas fa-user-shield"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/OWASP/Nest" target="_blank" rel="noopener">OWASP Foundation</a></h3>
+                        <p>Nest and PyGoat, as AI Lead Engineer</p>
+                    </div>
+                    <span class="oss-when">Mar – Jul 2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 6 merged PyGoat PRs</span>
+                </div>
+                <ul>
+                    <li>Built logging for Nest's Slack AI assistant that records each reply's intent, confidence, tokens and user reactions (<a href="https://github.com/OWASP/Nest/pull/5035" target="_blank" rel="noopener">#5035</a>).</li>
+                    <li>Fixed broken access-control routing in PyGoat (<a href="https://github.com/adeyosemanputra/pygoat/pull/471" target="_blank" rel="noopener">#471</a>, <a href="https://github.com/adeyosemanputra/pygoat/pull/469" target="_blank" rel="noopener">#469</a>) and built a learner progress dashboard (<a href="https://github.com/adeyosemanputra/pygoat/pull/525" target="_blank" rel="noopener">#525</a>).</li>
+                </ul>
+            </article>
+
+            <!-- Microsoft -->
+            <article class="oss heat h3">
+                <div class="oss-head">
+                    <div class="oss-mark"><i class="fab fa-microsoft"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/microsoft" target="_blank" rel="noopener">Microsoft</a></h3>
+                        <p>VS Code, Python extension and Python Environments</p>
+                    </div>
+                    <span class="oss-when">Jun – Oct 2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 4 merged PRs</span>
+                </div>
+                <ul>
+                    <li>Fixed <code>onDidChangePythonProjects</code> never firing for projects added at runtime, so Pylance's per-folder interpreters only saw new projects after a restart (<a href="https://github.com/microsoft/vscode-python-environments/pull/1641" target="_blank" rel="noopener">#1641</a>).</li>
+                    <li>Fixed the REPL prompt vanishing when a <code>PYTHONSTARTUP</code> script shadows builtins, with a regression test (<a href="https://github.com/microsoft/vscode-python/pull/26045" target="_blank" rel="noopener">#26045</a>).</li>
+                    <li>Added a context key so the Python activity-bar icon only shows in workspaces with Python files (<a href="https://github.com/microsoft/vscode-python-environments/pull/1663" target="_blank" rel="noopener">#1663</a>); fixed doc typos in VS Code (<a href="https://github.com/microsoft/vscode/pull/317718" target="_blank" rel="noopener">#317718</a>).</li>
+                </ul>
+                <div class="releases">
+                    <b>Repos</b>
+                    <a href="https://github.com/microsoft/vscode-python" target="_blank" rel="noopener">vscode-python</a>
+                    <a href="https://github.com/microsoft/vscode-python-environments" target="_blank" rel="noopener">python-environments</a>
+                    <a href="https://github.com/microsoft/vscode" target="_blank" rel="noopener">vscode</a>
+                </div>
+            </article>
+
+            <!-- SHAP -->
+            <article class="oss heat h2">
+                <div class="oss-head">
+                    <div class="oss-mark cool"><i class="fas fa-chart-bar"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/shap/shap" target="_blank" rel="noopener">SHAP</a></h3>
+                        <p>ML interpretability library</p>
+                    </div>
+                    <span class="oss-when">2026</span>
+                </div>
+                <ul>
+                    <li>Wrote a Treelite model loader so <code>TreeExplainer</code> can explain compiled Treelite models; reviewed by Treelite's author (<a href="https://github.com/shap/shap/pull/5059" target="_blank" rel="noopener">#5059</a>).</li>
+                    <li>Fixed a CUDA build failure (<a href="https://github.com/shap/shap/pull/4322" target="_blank" rel="noopener">#4322</a>) and added 65 unit tests for KernelExplainer edge cases (<a href="https://github.com/shap/shap/pull/4703" target="_blank" rel="noopener">#4703</a>).</li>
+                </ul>
+            </article>
+
+            <!-- pgmpy -->
+            <article class="oss heat h2">
+                <div class="oss-head">
+                    <div class="oss-mark cool"><i class="fas fa-project-diagram"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/pgmpy/pgmpy" target="_blank" rel="noopener">pgmpy</a></h3>
+                        <p>Probabilistic graphical models library</p>
+                    </div>
+                    <span class="oss-when">Mar 2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 2 merged PRs</span>
+                    <span><i class="fas fa-tag"></i> v1.1.0 release credit</span>
+                </div>
+                <ul>
+                    <li>Added input validation to stop silent data corruption in model fitting (<a href="https://github.com/pgmpy/pgmpy/pull/2994" target="_blank" rel="noopener">#2994</a>, <a href="https://github.com/pgmpy/pgmpy/pull/2743" target="_blank" rel="noopener">#2743</a>); credited in the <a href="https://github.com/pgmpy/pgmpy/discussions/3270" target="_blank" rel="noopener">v1.1.0 release notes</a>.</li>
+                    <li>Assigned by a maintainer to fix three bugs in the ExpertInLoop causal discovery algorithm (<a href="https://github.com/pgmpy/pgmpy/issues/3206" target="_blank" rel="noopener">#3206</a>).</li>
+                </ul>
+            </article>
+
+            <!-- HAMi -->
+            <article class="oss heat h2">
+                <div class="oss-head">
+                    <div class="oss-mark cool"><i class="fas fa-memory"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/Project-HAMi/HAMi" target="_blank" rel="noopener">Project-HAMi</a></h3>
+                        <p>CNCF Sandbox, Kubernetes GPU sharing</p>
+                    </div>
+                    <span class="oss-when">2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 2 merged PRs</span>
+                </div>
+                <ul>
+                    <li>Added per-GPU cordon: the <code>hami.io/device-cordon</code> node annotation takes listed GPU UUIDs out of new placements in the scheduler's <code>Fit()</code>, with no plugin restart (<a href="https://github.com/Project-HAMi/HAMi/pull/2298" target="_blank" rel="noopener">#2298</a>).</li>
+                    <li>Fixed a stale cache that ignored annotation-only changes, with 2 regression tests (<a href="https://github.com/Project-HAMi/HAMi/pull/3332" target="_blank" rel="noopener">#3332</a>).</li>
+                </ul>
+                <div class="oss-more">
+                    <a href="https://github.com/Project-HAMi/HAMi/pulls?q=is%3Apr+author%3Amohityadav8+is%3Amerged" target="_blank" rel="noopener">All merged PRs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- PSF -->
+            <article class="oss heat h1">
+                <div class="oss-head">
+                    <div class="oss-mark cool"><i class="fab fa-python"></i></div>
+                    <div>
+                        <h3><a href="https://devguide.python.org/documentation/translations/translating/" target="_blank" rel="noopener">Python Software Foundation</a></h3>
+                        <p>Python documentation, Punjabi translation</p>
+                    </div>
+                    <span class="oss-when">Jul 2026 – now</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-language"></i> Coordinator</span>
+                </div>
+                <ul>
+                    <li>One of three coordinators listed for the Punjabi translation of the Python docs in the CPython Devguide, added via merged PR <a href="https://github.com/python/devguide/pull/1870" target="_blank" rel="noopener">#1870</a>.</li>
+                </ul>
+                <div class="oss-more">
+                    <a href="https://docs.python.org/pa/" target="_blank" rel="noopener">docs.python.org/pa <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- OpenTofu -->
+            <article class="oss heat h1">
+                <div class="oss-head">
+                    <div class="oss-mark cool"><i class="fas fa-cube"></i></div>
+                    <div>
+                        <h3><a href="https://github.com/opentofu/opentofu" target="_blank" rel="noopener">OpenTofu</a></h3>
+                        <p>Open-source infrastructure as code</p>
+                    </div>
+                    <span class="oss-when">Oct 2026</span>
+                </div>
+                <div class="oss-chips">
+                    <span><i class="fas fa-check-circle"></i> 1 merged PR</span>
+                </div>
+                <ul>
+                    <li>Fixed lint-directive matching: a disable for one rule was also hiding other rules on the same construct. It now suppresses only the rule or group it names (<code>core:all</code> still hides everything) and handles stacked directives (<a href="https://github.com/opentofu/opentofu/pull/4730" target="_blank" rel="noopener">#4730</a>, +126/−12 lines, new test).</li>
+                </ul>
+            </article>
+
         </div>
-
-        <!-- Hydra Maintainer -->
-        <div class="box tilt proj-card">
-            <div class="proj-header" style="background:linear-gradient(135deg,#001a2c,#003349)">
-                <div class="proj-icon-wrap"><i class="fas fa-robot"></i></div>
-                <div class="proj-tag-top">GitHub App · Marketplace</div>
-            </div>
-            <div class="proj-body">
-                <h3>Hydra Maintainer</h3>
-                <p>Self-hosted GitHub App for open-source maintainers, built for the Hiero ecosystem and usable on any repo via a config file. Scores each PR 0–100 from six signals, suggests reviewers, runs DCO/GPG gates and stale-issue scans. HMAC-signed webhooks, <strong>76 tests, 46 production deployments, 28 stars, 49 forks</strong>.</p>
-                <div class="tech-stack">
-                    <span>Python</span><span>FastAPI</span><span>async SQLAlchemy</span><span>PostgreSQL</span><span>Docker</span>
-                </div>
-                <div class="btns">
-                    <a href="https://github.com/marketplace/hydra-maintainer" class="btn" target="_blank" rel="noopener"><i class="fas fa-store"></i> Marketplace</a>
-                    <a href="https://github.com/AnthropicBots/hiero-bot-py" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- MATS Compute Admin -->
-        <div class="box tilt proj-card">
-            <div class="proj-header" style="background:linear-gradient(135deg,#0a1a0a,#112211)">
-                <div class="proj-icon-wrap"><i class="fas fa-server"></i></div>
-                <div class="proj-tag-top">Infrastructure · Tooling</div>
-            </div>
-            <div class="proj-body">
-                <h3>MATS Compute Admin</h3>
-                <p>Compute administration toolkit: scholar provisioning/offboarding, budget tracking &amp; alerts, API key lifecycle (SHA-256, vault-ready), Slurm/HPC monitoring, weekly IAM audits and Slack digests. <strong>41 tests, 100% passing.</strong></p>
-                <div class="tech-stack">
-                    <span>Python</span><span>FastAPI</span><span>SQLite</span><span>PostgreSQL</span>
-                </div>
-                <div class="btns">
-                    <a href="https://github.com/AnthropicBots/mats-compute-admin" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
-                    <a href="https://github.com/AnthropicBots/mats-compute-admin" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- OG-CLEWS -->
-        <div class="box tilt proj-card">
-            <div class="proj-header" style="background:linear-gradient(135deg,#1a0a00,#2e1500)">
-                <div class="proj-icon-wrap"><i class="fas fa-globe-asia"></i></div>
-                <div class="proj-tag-top">Published · UN DESA</div>
-            </div>
-            <div class="proj-body">
-                <h3>OG-CLEWS Framework</h3>
-                <p>End-to-end ETL pipeline + Flask REST API integrating OSeMOSYS/CLEWS energy-climate models with the OG-Core macroeconomic framework for <strong>UN DESA policy simulation</strong>. Published on Zenodo 2025.</p>
-                <div class="tech-stack">
-                    <span>Python</span><span>Flask</span><span>ETL</span><span>REST API</span>
-                </div>
-                <div class="btns">
-                    <a href="https://zenodo.org/records/20480314" class="btn" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a>
-                    <a href="https://github.com/mohityadav8/og-clews-mini" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Malware Detector -->
-        <div class="box tilt proj-card">
-            <div class="proj-header" style="background:linear-gradient(135deg,#0d1b2a,#1a2a3a)">
-                <div class="proj-icon-wrap"><i class="fas fa-shield-alt"></i></div>
-                <div class="proj-tag-top">ML · Security</div>
-            </div>
-            <div class="proj-body">
-                <h3>Python Malware Detector</h3>
-                <p>ML-based malware detection using PE static features. <strong>92% detection accuracy</strong> with scikit-learn; preprocessing pipeline 35% faster via caching; CLI + Flask interface.</p>
-                <div class="tech-stack">
-                    <span>Python</span><span>scikit-learn</span><span>pefile</span><span>Flask</span>
-                </div>
-                <div class="btns">
-                    <a href="https://github.com/mohityadav8/malwaredetector" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
-                    <a href="https://github.com/mohityadav8/malwaredetector" class="btn btn-ghost" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="viewall">
-        <a href="https://github.com/mohityadav8?tab=repositories" target="_blank" rel="noopener" class="btn">
-            <span>View All on GitHub</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</section>
-
-<!-- ===== PUBLICATIONS ===== -->
-<section class="publications" id="publications">
-    <h2 class="heading"><i class="fas fa-file-alt"></i> Publications &amp; <span>Preprints</span></h2>
-    <div class="pub-container">
-
-        <div class="pub-card pub-featured">
-            <div class="pub-header">
-                <span class="pub-badge">LLM Alignment</span>
-                <span class="pub-venue">Zenodo preprint · v2 · Sept 2026</span>
-            </div>
-            <h3 class="pub-title">DPO vs. RLHF: An Empirical Comparison of Alignment Techniques for Large Language Models</h3>
-            <p class="pub-authors"><strong>Mohit Yadav</strong> — Chandigarh University, 2026 · CC BY 4.0</p>
-            <p class="pub-abstract">GPT-2 (124M) aligned with DPO (β = 0.1) and with RLHF (SFT, Bradley–Terry reward model, PPO) on 160,800 Anthropic HH-RLHF preference pairs, on a single 6 GB RTX 3050. Compares alignment quality, reward accuracy, cost, latency and alignment tax. DPO reached 71% reward accuracy (from 41%) and a 0.640 reward margin with no reward model, training in 16.6 min against 11.9 min for SFT. Released with 9 figures, 17 tables, training logs and reproduction scripts.</p>
-            <div class="pub-footer">
-                <div class="pub-tags">
-                    <span>GPT-2</span><span>DPO</span><span>RLHF</span><span>PPO</span><span>Reward Modeling</span>
-                </div>
-                <a href="https://doi.org/10.5281/zenodo.20578480" target="_blank" rel="noopener" class="pub-link">
-                    <i class="fas fa-external-link-alt"></i> DOI 10.5281/zenodo.20578480
-                </a>
-            </div>
-        </div>
-
-        <div class="pub-card">
-            <div class="pub-header">
-                <span class="pub-badge pub-badge-blue">Policy Simulation</span>
-                <span class="pub-venue">Zenodo 2025</span>
-            </div>
-            <h3 class="pub-title">OG-CLEWS: An Integration Framework for OSeMOSYS/CLEWS and OG-Core for UN DESA Policy Analysis</h3>
-            <p class="pub-authors"><strong>Mohit Yadav</strong> et al. — Published 2025</p>
-            <p class="pub-abstract">ETL pipeline + Flask API connecting energy-climate-economy models (OSeMOSYS/CLEWS + OG-Core) for UN DESA policy simulation. Enables cross-model data exchange supporting sustainable development policy analysis workflows.</p>
-            <div class="pub-footer">
-                <div class="pub-tags">
-                    <span>Python</span><span>Flask</span><span>ETL</span><span>OSeMOSYS</span><span>UN DESA</span>
-                </div>
-                <a href="https://zenodo.org/records/20480314" target="_blank" rel="noopener" class="pub-link">
-                    <i class="fas fa-external-link-alt"></i> View on Zenodo
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== EDUCATION ===== -->
-<section class="education" id="education">
-    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-    <p class="qoute">"Education is not the learning of facts, but the training of the mind to think."</p>
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/chandigarh-university.jpg" alt="Chandigarh University campus">
-            </div>
-            <div class="content">
-                <h3>B.E. Computer Science &amp; Engineering | Full Stack Specialization</h3>
-                <p>Chandigarh University &nbsp;·&nbsp; Chandigarh, India</p>
-                <p class="edu-sub">Coursework: Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Computer Networks, DBMS, Probability &amp; Statistics</p>
-                <p class="edu-sub">Senior Member — Droid Linux &amp; Cloud Stack Society · C-Square Member</p>
-                <h4>Jul 2024 – Jun 2028 (expected) &nbsp;·&nbsp; Pursuing</h4>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/maxford-school.jpg" alt="Maxford International School, Alwar">
-            </div>
-            <div class="content">
-                <h3>Senior Secondary (Class XII) · CBSE</h3>
-                <p>Maxford International School &nbsp;·&nbsp; Alwar, Rajasthan</p>
-                <p class="edu-sub">Physics · Chemistry · Mathematics · Computer Science</p>
-                <h4>2023 &nbsp;·&nbsp; 79.8%</h4>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/maxford-school.jpg" alt="Maxford International School, Alwar">
-            </div>
-            <div class="content">
-                <h3>Secondary (Class X) · CBSE</h3>
-                <p>Maxford International School &nbsp;·&nbsp; Alwar, Rajasthan</p>
-                <p class="edu-sub">Topped school in Mathematics &amp; Science</p>
-                <h4>2021 &nbsp;·&nbsp; 95.6%</h4>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== ROLES / TIMELINE ===== -->
-<section class="experience" id="experience">
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Roles &amp; <span>Experience</span></h2>
-    <div class="timeline">
-
-        <div class="container right">
-            <div class="content">
-                <div class="tag"><h2>Python Software Foundation</h2></div>
-                <div class="desc">
-                    <h3>Punjabi Translation Coordinator · Python Docs</h3>
-                    <p>Jul 2026 – present — One of three coordinators for docs.python.org/pa, listed in the CPython Devguide.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container left">
-            <div class="content">
-                <div class="tag"><h2>Microsoft (Open Source)</h2></div>
-                <div class="desc">
-                    <h3>Contributor · VS Code Python</h3>
-                    <p>Jun – Oct 2026 — 4 merged PRs across vscode-python, python-environments and vscode.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container right">
-            <div class="content">
-                <div class="tag"><h2>NVIDIA (Open Source)</h2></div>
-                <div class="desc">
-                    <h3>Contributor · aicr &amp; NodeWright</h3>
-                    <p>2026 — 34 merged PRs, named in 11 release notes across AI Cluster Runtime and NodeWright.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container left">
-            <div class="content">
-                <div class="tag"><h2>Kubescape (CNCF)</h2></div>
-                <div class="desc">
-                    <h3>Triage Member · Contributor</h3>
-                    <p>2026 — 14 merged PRs and 17 issues: PolicyReport output, RBAC rules, drift detection.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container right">
-            <div class="content">
-                <div class="tag"><h2>OWASP Foundation</h2></div>
-                <div class="desc">
-                    <h3>AI Lead Engineer · Nest &amp; PyGoat</h3>
-                    <p>Mar – Jul 2026 — AI assistant logging for Nest; access-control fixes and a learner dashboard for PyGoat.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container left">
-            <div class="content">
-                <div class="tag"><h2>Hiero / LFDT · Pollinations AI</h2></div>
-                <div class="desc">
-                    <h3>Open Source Contributor</h3>
-                    <p>2025 – 2026 — Security fixes &amp; CODEOWNERS for hiero-sdk-tck, HIP-1313 blog post; Pollinations docs and error specs (#7939, #7942).</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container right">
-            <div class="content">
-                <div class="tag"><h2>Deloitte Australia</h2></div>
-                <div class="desc">
-                    <h3>Technology Job Simulation · Virtual Experience</h3>
-                    <p>Jul – Aug 2025 — Python workflow automation and DSA-based SDLC optimizations.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 
-<!-- ===== AWARDS, EVENTS & CERTIFICATIONS ===== -->
-<section class="awards" id="awards">
-    <h2 class="heading"><i class="fas fa-trophy"></i> Events &amp; <span>Achievements</span></h2>
-    <div class="awards-grid">
-
-        <div class="award-card">
-            <div class="award-year-badge">2026</div>
-            <div class="award-icon"><i class="fas fa-code-branch"></i></div>
-            <h3>Top Contributor (12+ PRs)</h3>
-            <p>Elite Coders Winter of Code (ECWoC'26) — multi-repo engineering across 6+ production repositories</p>
-            <a href="https://app.truscholar.io/profile?credId=69bf58f034fff71acf116477" target="_blank" rel="noopener" class="award-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+<!-- ================= PROJECTS ================= -->
+<section class="band" id="work">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Things I <em>built</em></h2>
+            <div class="rule"></div>
         </div>
 
-        <div class="award-card">
-            <div class="award-year-badge">2026</div>
-            <div class="award-icon"><i class="fas fa-globe"></i></div>
-            <h3>Open Source Contributor</h3>
-            <p>Open Source Connect Global (OSCG'26) — international open-source contribution program</p>
-            <a href="https://app.truscholar.io/profile?credId=69d5ba34a0a1d70eaf4710fb" target="_blank" rel="noopener" class="award-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-        </div>
+        <div class="proj-grid">
 
-        <div class="award-card">
-            <div class="award-year-badge">2026</div>
-            <div class="award-icon"><i class="fas fa-tags"></i></div>
-            <h3>Credited in 12 Releases</h3>
-            <p>Named in release notes for NVIDIA aicr (7), NVIDIA NodeWright (4) and pgmpy v1.1.0</p>
-            <a href="#opensource" class="award-link">See contributions <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2026</div>
-            <div class="award-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3>LeetCode · 199 Solved</h3>
-            <p>89 medium and 34 hard problems · also active on Codeforces (mohityadav88)</p>
-            <a href="https://leetcode.com/u/mohityadav8/" target="_blank" rel="noopener" class="award-link">View Profile <i class="fas fa-external-link-alt"></i></a>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2026</div>
-            <div class="award-icon"><i class="fab fa-github"></i></div>
-            <h3>Pull Shark ×2 · Pair Extraordinaire</h3>
-            <p>GitHub Achievement Badges — Developer Program Member (GitHub Pro)</p>
-            <a href="https://github.com/mohityadav8?tab=achievements" target="_blank" rel="noopener" class="award-link">View Achievements <i class="fas fa-external-link-alt"></i></a>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2025</div>
-            <div class="award-icon"><i class="fab fa-google"></i></div>
-            <h3>Qualified</h3>
-            <p>Google BigQuery Code Challenge 2025 — competitive cloud data-engineering coding challenge</p>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2025</div>
-            <div class="award-icon"><i class="fab fa-amazon"></i></div>
-            <h3>Qualifier</h3>
-            <p>Amazon HackOn 2025 — Amazon's national hackathon for engineering &amp; innovation</p>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2025</div>
-            <div class="award-icon"><i class="fas fa-flag"></i></div>
-            <h3>Internal Round Qualifier</h3>
-            <p>Smart India Hackathon (SIH) 2025 — Government of India national-level hackathon, from Chandigarh University</p>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2025</div>
-            <div class="award-icon"><i class="fas fa-medal"></i></div>
-            <h3>Top 10 Finalist</h3>
-            <p>CU TechFest Innovation Hackathon 2025 — Chandigarh University intra-university innovation competition</p>
-        </div>
-
-        <div class="award-card">
-            <div class="award-year-badge">2025</div>
-            <div class="award-icon"><i class="fas fa-check-circle"></i></div>
-            <h3>Verified Contributor</h3>
-            <p>UNICC Global Trust Registry (UN/CEFACT) — reviewed technical architecture and standards for global implementation</p>
-        </div>
-
-    </div>
-
-    <h3 class="sub-heading"><i class="fas fa-certificate"></i> Certifications</h3>
-    <div class="cert-grid">
-        <a class="cert-card" href="https://coursera.org/share/87db72a7283bc03620c740653e65a31a" target="_blank" rel="noopener">
-            <div class="cert-logo"><span>IBM</span></div>
-            <div class="cert-info">
-                <h4>Python for Data Science &amp; AI</h4>
-                <p>IBM · Coursera · Oct 2026</p>
+            <div class="proj proj-hot">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-microchip"></i></div>
+                    <span class="proj-kind">GPU infra / Feb 2026 – now</span>
+                </div>
+                <div class="proj-body">
+                    <h3>GPU Lens</h3>
+                    <p>Self-hosted, read-only reliability and capacity console for GPU clusters. Six deterministic rules join DCGM and Prometheus data with Kubernetes pod and node state into incident reports with evidence for and against. <strong>Missing data never reads as healthy</strong>: GPUs silent for 180 s raise their own incident. No LLM calls; 9 Go test files, 6 offline scenarios.</p>
+                    <div class="stack">
+                        <span>Go</span><span>Python</span><span>Kubernetes</span><span>Prometheus</span><span>DCGM</span><span>React</span><span>TypeScript</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://gpu-lens.onrender.com" class="btn btn-sm" target="_blank" rel="noopener">Live demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Sievehouse/gpu-lens" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/file/d/139M8-j6TznqmQufnlrEfJaZOmZ1GOxf3/view?usp=sharing" target="_blank" rel="noopener">
-            <div class="cert-logo"><span>IBM</span></div>
-            <div class="cert-info">
-                <h4>Python 101 for Data Science</h4>
-                <p>IBM · Nov 2026</p>
+
+            <div class="proj proj-hot">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-brain"></i></div>
+                    <span class="proj-kind">LLM alignment / research</span>
+                </div>
+                <div class="proj-body">
+                    <h3>DPO vs. RLHF alignment study</h3>
+                    <p>Fine-tuned GPT-2 (124M) with DPO (β = 0.1) and with RLHF (SFT → Bradley–Terry reward model → PPO) on 160,800 Anthropic HH-RLHF pairs, all on one 6 GB RTX 3050. DPO reached <strong>71% reward accuracy</strong> (from 41%) with a 0.640 margin and no reward model. Published as a CC BY 4.0 preprint on Zenodo.</p>
+                    <div class="stack">
+                        <span>PyTorch</span><span>HuggingFace</span><span>TRL</span><span>GPT-2</span><span>DPO</span><span>RLHF/PPO</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://doi.org/10.5281/zenodo.20578480" class="btn btn-sm" target="_blank" rel="noopener">Read the paper <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/AnthropicBots/dpo-vs-rlhf-alignmet-study" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a class="cert-card" href="https://www.credly.com/badges/fcd3610d-570a-46c4-9fae-47b18f381190/public_url" target="_blank" rel="noopener">
-            <div class="cert-logo cert-aws"><i class="fab fa-aws"></i></div>
-            <div class="cert-info">
-                <h4>Generative AI Foundations</h4>
-                <p>AWS Academy · Credly · Apr 2026</p>
+
+            <div class="proj">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-robot"></i></div>
+                    <span class="proj-kind">GitHub App / Marketplace</span>
+                </div>
+                <div class="proj-body">
+                    <h3>Hydra Maintainer</h3>
+                    <p>Self-hosted GitHub App for open-source maintainers, built for the Hiero ecosystem and usable on any repo via a config file. Scores each PR 0–100 from six signals, suggests reviewers, runs DCO/GPG gates and stale-issue scans. HMAC-signed webhooks, <strong>76 tests, 46 production deployments, 28 stars, 49 forks</strong>.</p>
+                    <div class="stack">
+                        <span>Python</span><span>FastAPI</span><span>async SQLAlchemy</span><span>PostgreSQL</span><span>Docker</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://github.com/marketplace/hydra-maintainer" class="btn btn-sm" target="_blank" rel="noopener">Marketplace <i class="fas fa-store"></i></a>
+                        <a href="https://github.com/AnthropicBots/hiero-bot-py" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a class="cert-card" href="https://coursera.org/share/a45044e367295f65db711e3bfa03d8d1" target="_blank" rel="noopener">
-            <div class="cert-logo cert-coursera"><i class="fas fa-chart-line"></i></div>
-            <div class="cert-info">
-                <h4>Descriptive Analytics</h4>
-                <p>Coursera</p>
+
+            <div class="proj">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-server"></i></div>
+                    <span class="proj-kind">Infrastructure / tooling</span>
+                </div>
+                <div class="proj-body">
+                    <h3>MATS Compute Admin</h3>
+                    <p>Compute administration toolkit: scholar provisioning and offboarding, budget tracking and alerts, API key lifecycle (SHA-256, vault-ready), Slurm/HPC monitoring, weekly IAM audits and Slack digests. <strong>41 tests, all passing.</strong></p>
+                    <div class="stack">
+                        <span>Python</span><span>FastAPI</span><span>SQLite</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://github.com/AnthropicBots/mats-compute-admin" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-            <i class="fas fa-external-link-alt"></i>
-        </a>
+
+            <div class="proj">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-globe-asia"></i></div>
+                    <span class="proj-kind">Published / UN DESA</span>
+                </div>
+                <div class="proj-body">
+                    <h3>OG-CLEWS Framework</h3>
+                    <p>End-to-end ETL pipeline and Flask REST API integrating OSeMOSYS/CLEWS energy-climate models with the OG-Core macroeconomic framework for <strong>UN DESA policy simulation</strong>. Published on Zenodo 2025.</p>
+                    <div class="stack">
+                        <span>Python</span><span>Flask</span><span>ETL</span><span>REST API</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://zenodo.org/records/20480314" class="btn btn-sm" target="_blank" rel="noopener">Read the paper <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/mohityadav8/og-clews-mini" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj">
+                <div class="proj-top">
+                    <div class="proj-glyph"><i class="fas fa-shield-alt"></i></div>
+                    <span class="proj-kind">ML / security</span>
+                </div>
+                <div class="proj-body">
+                    <h3>Python Malware Detector</h3>
+                    <p>ML-based malware detection using PE static features. <strong>92% detection accuracy</strong> with scikit-learn; preprocessing pipeline 35% faster via caching; CLI and Flask interface.</p>
+                    <div class="stack">
+                        <span>Python</span><span>scikit-learn</span><span>pefile</span><span>Flask</span>
+                    </div>
+                    <div class="proj-acts">
+                        <a href="https://github.com/mohityadav8/malwaredetector" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Code <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="center-act">
+            <a href="https://github.com/mohityadav8?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost">View all on GitHub <i class="fab fa-github"></i></a>
+        </div>
     </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="contact" id="contact">
-    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-    <div class="container">
-        <div class="content">
-            <div class="image-box">
-                <img draggable="false" src="./assets/images/contact.png" alt="">
+<!-- ================= PUBLICATIONS ================= -->
+<section class="band" id="publications">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Publications &amp; <em>preprints</em></h2>
+            <div class="rule"></div>
+        </div>
+
+        <div class="pubs">
+            <article class="pub pub-lead heat h5">
+                <div class="pub-meta">
+                    <span class="pub-kind">LLM alignment</span>
+                    <span class="pub-where">Zenodo preprint, v2, Sept 2026</span>
+                </div>
+                <h3>DPO vs. RLHF: An Empirical Comparison of Alignment Techniques for Large Language Models</h3>
+                <p class="pub-authors"><strong>Mohit Yadav</strong> — Chandigarh University, 2026, CC BY 4.0</p>
+                <p class="pub-abs">GPT-2 (124M) aligned with DPO (β = 0.1) and with RLHF (SFT, Bradley–Terry reward model, PPO) on 160,800 Anthropic HH-RLHF preference pairs, on a single 6 GB RTX 3050. Compares alignment quality, reward accuracy, cost, latency and alignment tax. DPO reached 71% reward accuracy (from 41%) and a 0.640 reward margin with no reward model, training in 16.6 min against 11.9 min for SFT. Released with 9 figures, 17 tables, training logs and reproduction scripts.</p>
+                <div class="pub-foot">
+                    <div class="pub-tags">
+                        <span>GPT-2</span><span>DPO</span><span>RLHF</span><span>PPO</span><span>Reward modeling</span>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20578480" target="_blank" rel="noopener" class="doi">
+                        <i class="fas fa-external-link-alt"></i> doi 10.5281/zenodo.20578480
+                    </a>
+                </div>
+            </article>
+
+            <article class="pub heat h3">
+                <div class="pub-meta">
+                    <span class="pub-kind gold">Policy simulation</span>
+                    <span class="pub-where">Zenodo, 2025</span>
+                </div>
+                <h3>OG-CLEWS: An Integration Framework for OSeMOSYS/CLEWS and OG-Core for UN DESA Policy Analysis</h3>
+                <p class="pub-authors"><strong>Mohit Yadav</strong> et al. — published 2025</p>
+                <p class="pub-abs">ETL pipeline and Flask API connecting energy-climate-economy models (OSeMOSYS/CLEWS and OG-Core) for UN DESA policy simulation. Enables cross-model data exchange supporting sustainable development policy analysis workflows.</p>
+                <div class="pub-foot">
+                    <div class="pub-tags">
+                        <span>Python</span><span>Flask</span><span>ETL</span><span>OSeMOSYS</span><span>UN DESA</span>
+                    </div>
+                    <a href="https://zenodo.org/records/20480314" target="_blank" rel="noopener" class="doi">
+                        <i class="fas fa-external-link-alt"></i> View on Zenodo
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ROLES ================= -->
+<section class="band" id="experience">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Roles, most recent first</h2>
+            <div class="rule"></div>
+        </div>
+
+        <div class="tl">
+            <div class="tl-item now">
+                <span class="tl-when">Jul 2026 – now</span>
+                <h3>Punjabi Translation Coordinator, <b>Python Software Foundation</b></h3>
+                <p>One of three coordinators for docs.python.org/pa, listed in the CPython Devguide.</p>
             </div>
+            <div class="tl-item now">
+                <span class="tl-when">2026</span>
+                <h3>Contributor, <b>NVIDIA</b> — aicr &amp; NodeWright</h3>
+                <p>34 merged PRs, named in 11 release notes across AI Cluster Runtime and NodeWright.</p>
+            </div>
+            <div class="tl-item now">
+                <span class="tl-when">2026</span>
+                <h3>Triage Member &amp; contributor, <b>Kubescape (CNCF)</b></h3>
+                <p>14 merged PRs and 17 issues: PolicyReport output, RBAC rules, drift detection.</p>
+            </div>
+            <div class="tl-item">
+                <span class="tl-when">Jun – Oct 2026</span>
+                <h3>Contributor, <b>Microsoft</b> — VS Code Python</h3>
+                <p>4 merged PRs across vscode-python, python-environments and vscode.</p>
+            </div>
+            <div class="tl-item">
+                <span class="tl-when">Mar – Jul 2026</span>
+                <h3>AI Lead Engineer, <b>OWASP Foundation</b> — Nest &amp; PyGoat</h3>
+                <p>AI assistant logging for Nest; access-control fixes and a learner dashboard for PyGoat.</p>
+            </div>
+            <div class="tl-item">
+                <span class="tl-when">2025 – 2026</span>
+                <h3>Open Source Contributor, <b>Hiero / LFDT</b> &amp; Pollinations AI</h3>
+                <p>Security fixes and CODEOWNERS for hiero-sdk-tck, HIP-1313 blog post; Pollinations docs and error specs (#7939, #7942).</p>
+            </div>
+            <div class="tl-item">
+                <span class="tl-when">Jul – Aug 2025</span>
+                <h3>Technology Job Simulation, <b>Deloitte Australia</b></h3>
+                <p>Python workflow automation and DSA-based SDLC optimizations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="band" id="education">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Education</h2>
+            <div class="rule"></div>
+        </div>
+
+        <div class="edu">
+            <div class="edu-item heat h5">
+                <img src="./assets/images/educat/chandigarh-university.jpg" alt="Chandigarh University campus">
+                <div>
+                    <h3>B.E. Computer Science &amp; Engineering, Full Stack specialization</h3>
+                    <p class="where">Chandigarh University, Chandigarh, India</p>
+                    <p class="sub">Coursework: Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Computer Networks, DBMS, Probability &amp; Statistics. Senior Member of the Droid Linux &amp; Cloud Stack Society, and a C-Square member.</p>
+                </div>
+                <div class="edu-score">
+                    <b>2024–28</b>
+                    <span>pursuing</span>
+                </div>
+            </div>
+
+            <div class="edu-item heat h3">
+                <img src="./assets/images/educat/maxford-school.jpg" alt="Maxford International School, Alwar">
+                <div>
+                    <h3>Senior Secondary, Class XII, CBSE</h3>
+                    <p class="where">Maxford International School, Alwar, Rajasthan</p>
+                    <p class="sub">Physics, Chemistry, Mathematics and Computer Science.</p>
+                </div>
+                <div class="edu-score">
+                    <b>79.8%</b>
+                    <span>2023</span>
+                </div>
+            </div>
+
+            <div class="edu-item heat h4">
+                <img src="./assets/images/educat/maxford-school.jpg" alt="Maxford International School, Alwar">
+                <div>
+                    <h3>Secondary, Class X, CBSE</h3>
+                    <p class="where">Maxford International School, Alwar, Rajasthan</p>
+                    <p class="sub">Topped the school in Mathematics and Science.</p>
+                </div>
+                <div class="edu-score">
+                    <b>95.6%</b>
+                    <span>2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EVENTS & CERTS ================= -->
+<section class="band" id="awards">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Events &amp; <em>achievements</em></h2>
+            <div class="rule"></div>
+        </div>
+
+        <div class="awards">
+            <div class="award heat h5">
+                <div class="award-top"><i class="fas fa-code-branch"></i><span class="award-yr">2026</span></div>
+                <h3>Top Contributor, 12+ PRs</h3>
+                <p>Elite Coders Winter of Code (ECWoC'26) — multi-repo engineering across 6+ production repositories.</p>
+                <a href="https://app.truscholar.io/profile?credId=69bf58f034fff71acf116477" target="_blank" rel="noopener">View certificate <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="award heat h4">
+                <div class="award-top"><i class="fas fa-globe"></i><span class="award-yr">2026</span></div>
+                <h3>Open Source Contributor</h3>
+                <p>Open Source Connect Global (OSCG'26) — international open-source contribution program.</p>
+                <a href="https://app.truscholar.io/profile?credId=69d5ba34a0a1d70eaf4710fb" target="_blank" rel="noopener">View certificate <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="award heat h5">
+                <div class="award-top"><i class="fas fa-tags"></i><span class="award-yr">2026</span></div>
+                <h3>Credited in 12 releases</h3>
+                <p>Named in release notes for NVIDIA aicr (7), NVIDIA NodeWright (4) and pgmpy v1.1.0.</p>
+                <a href="#opensource">See contributions <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="award heat h3">
+                <div class="award-top"><i class="fas fa-laptop-code"></i><span class="award-yr">2026</span></div>
+                <h3>199 LeetCode problems solved</h3>
+                <p>89 medium and 34 hard problems. Also active on Codeforces as mohityadav88.</p>
+                <a href="https://leetcode.com/u/mohityadav8/" target="_blank" rel="noopener">View profile <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="award heat h3">
+                <div class="award-top"><i class="fab fa-github"></i><span class="award-yr">2026</span></div>
+                <h3>Pull Shark ×2, Pair Extraordinaire</h3>
+                <p>GitHub achievement badges. Developer Program Member on GitHub Pro.</p>
+                <a href="https://github.com/mohityadav8?tab=achievements" target="_blank" rel="noopener">View achievements <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="award heat h2">
+                <div class="award-top"><i class="fab fa-google"></i><span class="award-yr">2025</span></div>
+                <h3>Qualified</h3>
+                <p>Google BigQuery Code Challenge 2025 — competitive cloud data-engineering challenge.</p>
+            </div>
+
+            <div class="award heat h2">
+                <div class="award-top"><i class="fab fa-amazon"></i><span class="award-yr">2025</span></div>
+                <h3>Qualifier</h3>
+                <p>Amazon HackOn 2025 — Amazon's national hackathon for engineering and innovation.</p>
+            </div>
+
+            <div class="award heat h2">
+                <div class="award-top"><i class="fas fa-flag"></i><span class="award-yr">2025</span></div>
+                <h3>Internal round qualifier</h3>
+                <p>Smart India Hackathon 2025 — Government of India national-level hackathon, from Chandigarh University.</p>
+            </div>
+
+            <div class="award heat h3">
+                <div class="award-top"><i class="fas fa-medal"></i><span class="award-yr">2025</span></div>
+                <h3>Top 10 finalist</h3>
+                <p>CU TechFest Innovation Hackathon 2025 — Chandigarh University innovation competition.</p>
+            </div>
+
+            <div class="award heat h2">
+                <div class="award-top"><i class="fas fa-check-circle"></i><span class="award-yr">2025</span></div>
+                <h3>Verified Contributor</h3>
+                <p>UNICC Global Trust Registry (UN/CEFACT) — reviewed technical architecture and standards for global implementation.</p>
+            </div>
+        </div>
+
+        <h3 class="sub-head"><i class="fas fa-certificate"></i> Certifications</h3>
+        <div class="certs">
+            <a class="cert" href="https://coursera.org/share/87db72a7283bc03620c740653e65a31a" target="_blank" rel="noopener">
+                <div class="cert-logo"><span>IBM</span></div>
+                <div>
+                    <h4>Python for Data Science &amp; AI</h4>
+                    <p>IBM, Coursera, Oct 2026</p>
+                </div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a class="cert" href="https://drive.google.com/file/d/139M8-j6TznqmQufnlrEfJaZOmZ1GOxf3/view?usp=sharing" target="_blank" rel="noopener">
+                <div class="cert-logo"><span>IBM</span></div>
+                <div>
+                    <h4>Python 101 for Data Science</h4>
+                    <p>IBM, Nov 2026</p>
+                </div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a class="cert" href="https://www.credly.com/badges/fcd3610d-570a-46c4-9fae-47b18f381190/public_url" target="_blank" rel="noopener">
+                <div class="cert-logo"><i class="fab fa-aws"></i></div>
+                <div>
+                    <h4>Generative AI Foundations</h4>
+                    <p>AWS Academy, Credly, Apr 2026</p>
+                </div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a class="cert" href="https://coursera.org/share/a45044e367295f65db711e3bfa03d8d1" target="_blank" rel="noopener">
+                <div class="cert-logo"><i class="fas fa-chart-line"></i></div>
+                <div>
+                    <h4>Descriptive Analytics</h4>
+                    <p>Coursera</p>
+                </div>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="band" id="contact">
+    <div class="wrap">
+        <div class="s-head">
+            <h2>Get in touch</h2>
+            <div class="rule"></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-aside">
+                <h3>Have a GPU cluster that keeps falling over?</h3>
+                <p>I'm open to internships and collaboration on GPU systems, Kubernetes ML infrastructure and alignment research. Mail usually gets the fastest reply.</p>
+                <div class="contact-direct">
+                    <a href="mailto:ymohit799057@gmail.com"><i class="fas fa-envelope"></i> ymohit799057@gmail.com</a>
+                    <a href="https://github.com/mohityadav8" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/mohityadav8</a>
+                    <a href="https://www.linkedin.com/in/mohit-yadav-6b2319305/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://orcid.org/0009-0000-0021-6379" target="_blank" rel="noopener"><i class="fas fa-id-badge"></i> ORCID 0009-0000-0021-6379</a>
+                </div>
+            </div>
+
             <form id="contact-form">
-                <div class="form-group">
+                <div class="f-pair">
                     <div class="field">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <i class="fas fa-user"></i>
+                        <label for="cf-name">Your name</label>
+                        <input id="cf-name" type="text" name="name" placeholder="Jane Doe" required>
                     </div>
                     <div class="field">
-                        <input type="email" name="email" placeholder="Email" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="field">
-                        <input type="text" name="phone" placeholder="Phone">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="message">
-                        <textarea placeholder="Message" name="message" required></textarea>
-                        <i class="fas fa-comment-dots"></i>
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" type="email" name="email" placeholder="jane@company.com" required>
                     </div>
                 </div>
-                <div class="button-area">
-                    <button type="submit">Send Message <i class="fa fa-paper-plane"></i></button>
+                <div class="field">
+                    <label for="cf-phone">Phone, if you prefer a call</label>
+                    <input id="cf-phone" type="text" name="phone" placeholder="Optional">
+                </div>
+                <div class="field">
+                    <label for="cf-msg">Message</label>
+                    <textarea id="cf-msg" name="message" placeholder="What are you working on?" required></textarea>
+                </div>
+                <p class="f-note">This opens your own mail app with the message filled in — nothing is sent through this page.</p>
+                <div>
+                    <button type="submit" class="btn btn-ember">Open in mail app <i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
         </div>
     </div>
 </section>
+</main>
 
-<!-- ===== FOOTER ===== -->
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>Mohit Yadav</h3>
-            <p>GPU systems, ML infrastructure and open source. Contributor to NVIDIA, Microsoft, Kubescape, HAMi and OpenTofu.<br/><br/>Keep Building 🚀</p>
-        </div>
-        <div class="box">
-            <h3>Quick Links</h3>
-            <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
-            <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
-            <a href="#opensource"><i class="fas fa-chevron-circle-right"></i> Open Source</a>
-            <a href="#work"><i class="fas fa-chevron-circle-right"></i> Projects</a>
-            <a href="#publications"><i class="fas fa-chevron-circle-right"></i> Papers</a>
-            <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
-            <a href="#awards"><i class="fas fa-chevron-circle-right"></i> Events</a>
-        </div>
-        <div class="box">
-            <h3>Contact Info</h3>
-            <p><i class="fas fa-envelope"></i> ymohit799057@gmail.com</p>
-            <p><i class="fas fa-map-marked-alt"></i> Rajasthan, India</p>
-            <div class="share">
-                <a href="https://www.linkedin.com/in/mohit-yadav-6b2319305/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
-                <a href="https://github.com/mohityadav8" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener"></a>
-                <a href="mailto:ymohit799057@gmail.com" class="fas fa-envelope" aria-label="Mail"></a>
-                <a href="https://leetcode.com/u/mohityadav8/" class="fas fa-code" aria-label="LeetCode" target="_blank" rel="noopener"></a>
-                <a href="https://x.com/MOHITYA13540069" class="fab fa-twitter" aria-label="Twitter" target="_blank" rel="noopener"></a>
-                <a href="https://orcid.org/0009-0000-0021-6379" class="fas fa-id-badge" aria-label="ORCID" target="_blank" rel="noopener"></a>
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+    <div class="wrap">
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <div class="brand">MOHIT<s>/</s><b>YADAV</b></div>
+                <p>GPU systems, ML infrastructure and open source. Contributor to NVIDIA, Microsoft, Kubescape, HAMi and OpenTofu.</p>
+                <div class="foot-social">
+                    <a href="https://github.com/mohityadav8" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mohit-yadav-6b2319305/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ymohit799057@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://leetcode.com/u/mohityadav8/" aria-label="LeetCode" target="_blank" rel="noopener"><i class="fas fa-code"></i></a>
+                    <a href="https://x.com/MOHITYA13540069" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="https://orcid.org/0009-0000-0021-6379" aria-label="ORCID" target="_blank" rel="noopener"><i class="fas fa-id-badge"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Sections</h4>
+                <div class="foot-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#opensource">Open source</a>
+                    <a href="#work">Projects</a>
+                    <a href="#publications">Papers</a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Elsewhere</h4>
+                <div class="foot-links">
+                    <a href="#experience">Roles</a>
+                    <a href="#education">Education</a>
+                    <a href="#awards">Events</a>
+                    <a href="./assets/Mohit_Yadav_CV.pdf" target="_blank">Resume (PDF)</a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=8ttWypQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                </div>
             </div>
         </div>
+
+        <div class="foot-base">
+            <span>Built and maintained by <a href="https://github.com/mohityadav8">Mohit Yadav</a>. Rajasthan, India.</span>
+            <span>Keep building.</span>
+        </div>
     </div>
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/mohit-yadav-6b2319305/">Mohit Yadav</a></h1>
-</section>
+</footer>
 
-<!-- scroll-to-top -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="#home" aria-label="Back to top" id="totop"><i class="fas fa-arrow-up"></i></a>
 
-<!-- JS CDNs -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" crossorigin="anonymous"></script>
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
